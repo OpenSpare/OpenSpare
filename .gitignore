@@ -4,5 +4,6 @@
 *-backups/
 *-cache
 *-lib-table
+*.kicad_prl
 
 *.zip
