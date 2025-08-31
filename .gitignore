@@ -1,0 +1,8 @@
+# Kicad
+*.lck
+*.bak
+*-backups/
+*-cache
+*-lib-table
+
+*.zip
