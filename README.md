@@ -1,6 +1,6 @@
 # OpenSpare
 
-**OpenSpare** is an open-source initiative to design and share replacement parts for household appliances, with the goal of extending their lifespan and reducing our environmental impact.
+**OpenSpare** is an open-source initiative to design and share replacement part for appliances, with the goal of extending their lifespan and reducing our environmental impact.
 
 ## 🚀 Why OpenSpare?
 
