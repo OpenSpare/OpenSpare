@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.5,
-          "height": 2.25,
-          "width": 2.25
+          "drill": 1.02,
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -440,14 +440,19 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "OpenSpare_footprints"
+    ],
+    "pinned_symbol_libs": [
+      "OpenSpare_symbols"
+    ]
   },
   "meta": {
     "filename": "SMG_OVN_DE96-00994A.kicad_pro",
@@ -574,26 +579,8 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "MAXIMUM_PACKAGE_HEIGHT",
           "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
           "show": false
         },
         {
@@ -664,110 +651,56 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_alt",
-          "name": "Manufacturer_alt",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Supplier",
-          "name": "Supplier",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer1",
-          "name": "Manufacturer1",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer1Ref",
-          "name": "Manufacturer1Ref",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer2",
-          "name": "Manufacturer2",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "RefManufacturer",
-          "name": "RefManufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "RefManufacturer_alt",
-          "name": "RefManufacturer_alt",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "RefSupplier",
-          "name": "RefSupplier",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Maximum_Package_height",
           "name": "Maximum_Package_height",
           "show": false
         },
         {
           "group_by": false,
-          "label": "ManufacturerRef",
-          "name": "ManufacturerRef",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "ManufacturerRef_alt",
-          "name": "ManufacturerRef_alt",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SupplierRef",
-          "name": "SupplierRef",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer2Ref",
-          "name": "Manufacturer2Ref",
+          "label": "Supplier2_Part_Number",
+          "name": "Supplier2_Part_Number",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Supplier1",
-          "name": "Supplier1",
+          "label": "Manufacturer2_Name",
+          "name": "Manufacturer2_Name",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Supplier1Ref",
-          "name": "Supplier1Ref",
+          "label": "Manufacturer1_Part_Number",
+          "name": "Manufacturer1_Part_Number",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Supplier2",
-          "name": "Supplier2",
+          "label": "Manufacturer2_Part_Number",
+          "name": "Manufacturer2_Part_Number",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Supplier2Ref",
-          "name": "Supplier2Ref",
+          "label": "Manufacturer1_Name",
+          "name": "Manufacturer1_Name",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier1_Name",
+          "name": "Supplier1_Name",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier1_Part_Number",
+          "name": "Supplier1_Part_Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier2_Name",
+          "name": "Supplier2_Name",
           "show": true
         }
       ],
@@ -775,8 +708,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Datasheet"
+      "sort_asc": false,
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -806,7 +739,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "kicad-embed://openspare_schematics_template.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
