@@ -1,4 +1,4 @@
-(footprint "SW_SRRM1C7800"
+(footprint "SW_RS240403A0X-HA1-000"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "SW_SRRM1C7800"
+	(property "Value" "SW_RS240403A0X-HA1-000"
 		(at -3.745 16.885 0)
 		(layer "F.Fab")
 		(uuid "56ea182f-0378-4afb-996c-a8d40f060b2a")
