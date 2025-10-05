@@ -5,5 +5,6 @@
 *-cache
 *-lib-table
 *.kicad_prl
+fabrication-toolkit-options.json
 
 *.zip

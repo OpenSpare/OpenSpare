@@ -9455,7 +9455,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "~"
 			(at 46.99 83.8199 0)
 			(effects
 				(font
@@ -9794,6 +9794,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 181.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4103683"
 			(at 181.61 72.39 0)
 			(effects
 				(font
@@ -10196,7 +10205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick Film Resistors - SMD General Purpose Chip Resistor 0603, 10kOhms, 5%, 1/10W"
+		(property "Description" "Thick Film Resistors - SMD General Purpose Chip Resistor 0603, 10kOhms, 1%, 1/10W"
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -10304,7 +10313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier1_Part_Number" "603-RC0603JR-0710KL"
+		(property "Supplier1_Part_Number" " 603-RC0603FR-1010KL"
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -10322,7 +10331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer1_Part_Number" "RC0603JR-0710KL"
+		(property "Manufacturer1_Part_Number" "RC0603FR-1010KL"
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -10332,6 +10341,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 152.4 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4004838"
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -10603,6 +10621,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 181.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4103683"
 			(at 181.61 80.01 0)
 			(effects
 				(font
@@ -10895,6 +10922,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 120.65 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1512170"
 			(at 120.65 80.01 0)
 			(effects
 				(font
@@ -11349,6 +11385,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1512170"
+			(at 120.65 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "048eba71-4d57-4e8d-ac0d-474e04adc1aa")
 		)
@@ -11620,6 +11665,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1512170"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fbc1d3e9-20f0-41d2-aa69-214180ef87c7")
 		)
@@ -11824,6 +11878,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1512170"
+			(at 120.65 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "13850338-72ff-44b0-ba73-4070e823d463")
 		)
@@ -12019,6 +12082,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 152.4 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4103683"
 			(at 152.4 68.58 90)
 			(effects
 				(font
@@ -12312,6 +12384,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4103683"
 			(at 181.61 87.63 0)
 			(effects
 				(font
@@ -12683,7 +12764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7k"
+		(property "Value" "4.7k"
 			(at 184.15 104.1399 0)
 			(effects
 				(font
@@ -12854,6 +12935,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C4269355"
+			(at 181.61 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "31f3259c-fa38-4035-9bdd-781d8df720d3")
 		)
@@ -12995,6 +13085,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1512170"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16e12d49-84ec-42d9-b339-39d77f05a6a2")
 		)
@@ -13029,7 +13128,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7k"
+		(property "Value" "4.7k"
 			(at 184.15 96.5199 0)
 			(effects
 				(font
@@ -13192,6 +13291,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 181.61 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4269355"
 			(at 181.61 95.25 0)
 			(effects
 				(font
@@ -13366,6 +13474,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 219.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900221322"
 			(at 219.71 88.9 0)
 			(effects
 				(font
@@ -13708,6 +13825,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1512170"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b34f6bfa-8dce-4b9c-91d2-67eed85f739c")
 		)
@@ -13860,6 +13986,15 @@
 			)
 		)
 		(property "Url" ""
+			(at 240.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900221323"
 			(at 240.03 87.63 0)
 			(effects
 				(font
