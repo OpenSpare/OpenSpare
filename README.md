@@ -49,7 +49,7 @@ All contributions are welcome:
 - Improving existing designs.  
 - Manufacturing, testing and sharing feedback. 
 
-👉 A detailed contribution guide will be available in [CONTRIBUTING.md](./CONTRIBUTING.md).
+👉 A detailed contribution guide is available in the [Wiki](https://github.com/OpenSpare/OpenSpare/wiki).
 
 ## License
 
