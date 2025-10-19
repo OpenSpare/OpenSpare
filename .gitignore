@@ -3,7 +3,7 @@
 *.bak
 *-backups/
 *-cache
-*-lib-table
+parts/*-lib-table
 *.kicad_prl
 fabrication-toolkit-options.json
 
