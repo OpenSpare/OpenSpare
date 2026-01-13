@@ -3,10 +3,6 @@ layout: default
 title: Parts List
 ---
 
-[Home](/) | [Parts List](/parts-list) | [Contributing](/contributing-pcb) | [GitHub](https://github.com/OpenSpare/OpenSpare)
-
----
-
 # Parts List
 
 _last update: 2025-10-6_
