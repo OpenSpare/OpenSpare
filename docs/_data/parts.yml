@@ -1,0 +1,92 @@
+brands:
+  - id: samsung
+    name: Samsung
+    logo: /img/brands/samsung.png
+    equipment:
+      - type: oven
+        name: Oven
+        icon: /img/equipments/oven.png
+        parts:
+          - reference: DE96-00994A
+            description: Oven's program selector
+            image: https://github.com/OpenSpare/OpenSpare/blob/main/parts/samsung/oven/SMG_OVN_DE96-00994A/pictures/Samsung_DE96-00994A_original_top_picture.jpg?raw=true
+            files: https://github.com/OpenSpare/OpenSpare/tree/main/parts/samsung/oven/SMG_OVN_DE96-00994A
+            status: Published rev 1 (not tested)
+            compatible:
+              - brand: Samsung
+                model: CQ1570U/XEF
+              - brand: Samsung
+                model: NQ50C7235AS/EF
+              - brand: Samsung
+                model: NQ50C7535DS/EF
+              - brand: Samsung
+                model: NQ50C7935ES/EF
+              - brand: Samsung
+                model: NQ50J5530BS
+              - brand: Samsung
+                model: NQ50J5530BS/EF
+              - brand: Samsung
+                model: NQ50K3130BM/EF
+              - brand: Samsung
+                model: NQ50K3130BS/EF
+              - brand: Samsung
+                model: NQ50K5130BS
+              - brand: Samsung
+                model: NQ50K5130BS/EF
+              - brand: Samsung
+                model: NV64R3531BS/EF
+              - brand: Samsung
+                model: NV66M3531BS
+              - brand: Samsung
+                model: NV66M3571BS
+              - brand: Samsung
+                model: NV68R3571RS/EF
+              - brand: Samsung
+                model: NV70F7766LS/EF
+              - brand: Samsung
+                model: NV70F7796MS/EF
+              - brand: Samsung
+                model: NV70M3571RS
+              - brand: Samsung
+                model: NV75J7570RS
+              - brand: Samsung
+                model: NV75K5541BS
+              - brand: Samsung
+                model: NV75K5571BS
+              - brand: Samsung
+                model: NV75K5571RM
+              - brand: Samsung
+                model: NV75K5571RS
+              - brand: Samsung
+                model: NV75M5572RS/EF
+              - brand: Samsung
+                model: NV75N5573BS/EF
+              - brand: Samsung
+                model: NV75N5573RM/EF
+              - brand: Samsung
+                model: NV75N5573RS/EF
+              - brand: Samsung
+                model: NV75N5574RS/EF
+              - brand: Samsung
+                model: NV75N5671BS
+              - brand: Samsung
+                model: NV75N5671RM
+              - brand: Samsung
+                model: NV75N5671RS
+              - brand: Samsung
+                model: NV75N7677RS/EF
+
+  - id: bosch
+    name: Bosch
+    logo: /img/brands/bosch.png
+    equipment:
+      - type: fridge
+        name: Fridge
+        icon: /img/equipments/fridge.png
+        parts:
+          - reference: "10024820"
+            description: Fridge part
+            image: /logo/medium_logo_openspare_yellow_400px.png
+            files: https://github.com/OpenSpare/OpenSpare/tree/main/parts/bosch/fridge/BSH_FRG_10024820
+            status: In development
+            compatible: []
