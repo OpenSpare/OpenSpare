@@ -8,3 +8,7 @@ parts/*-lib-table
 fabrication-toolkit-options.json
 
 *.zip
+
+# Jekyll (local development)
+docs/_site/
+docs/Gemfile.lock
