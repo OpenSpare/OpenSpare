@@ -210,26 +210,24 @@ document.addEventListener('DOMContentLoaded', function() {
           }
 
           // Build matching devices list
-          var maxDisplay = 10;
-          var totalDevices = match.matchingDevices.length;
-          var devicesToShow = match.matchingDevices.slice(0, maxDisplay);
-
-          var matchingHtml = '<div class="matching-devices"><span class="matching-label">Matches:</span><ul class="matching-list">';
-          devicesToShow.forEach(function(d) {
-            matchingHtml += '<li>' + d.brand + ' ' + d.model + '</li>';
+          var sortedMatchingDevices = match.matchingDevices.slice().sort(function(a, b) {
+            return (a.brand + a.model).localeCompare(b.brand + b.model);
           });
-          matchingHtml += '</ul>';
-          if (totalDevices > maxDisplay) {
-            matchingHtml += '<span class="matching-more">(+ ' + (totalDevices - maxDisplay) + ' more)</span>';
-          }
-          matchingHtml += '</div>';
+
+          var matchingHtml = '<div class="matching-devices">' +
+            '<a href="#" class="compatible-toggle">Matches ' + match.matchingDevices.length + ' device(s) ▼</a>' +
+            '<ul class="matching-list hidden">';
+          sortedMatchingDevices.forEach(function(d) {
+            matchingHtml += '<li>' + getBrandName(d.brand) + ' - ' + d.model + '</li>';
+          });
+          matchingHtml += '</ul></div>';
 
           card.innerHTML = '<img src="' + imgSrc + '" alt="' + part.reference + '" class="part-image">' +
             '<div class="part-info">' +
               '<h3>' + part.reference + '</h3>' +
               '<p class="part-description">' + part.description + '</p>' +
-              matchingHtml +
               '<span class="part-status">' + part.status + '</span>' +
+              matchingHtml +
               '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
             '</div>';
 
