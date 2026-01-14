@@ -26,58 +26,33 @@ title: Parts List
     {% endfor %}
   </div>
 
-  <!-- Equipment Cards (hidden by default) -->
+  <!-- Equipment Cards (hidden by default, one section per brand) -->
   {% for brand in site.data.parts.brands %}
   <div id="equipment-{{ brand.id }}" class="equipment-section hidden">
     <div class="back-nav">
       <a href="#" class="back-link" data-back="brands">← Back to brands</a>
     </div>
     <div class="card-grid">
-      {% for equip in brand.equipment %}
-      <div class="card equipment-card" data-brand="{{ brand.id }}" data-equipment="{{ equip.type }}">
+      {% for equip in site.data.parts.equipment_types %}
+      <div class="card equipment-card" data-brand="{{ brand.id }}" data-equipment="{{ equip.id }}">
         <img src="{{ equip.icon | relative_url }}" alt="{{ equip.name }}" class="card-logo">
         <h3>{{ equip.name }}</h3>
-        <span class="part-count">{{ equip.parts.size }} part(s)</span>
+        <span class="part-count" data-brand="{{ brand.id }}" data-equipment="{{ equip.id }}"></span>
       </div>
       {% endfor %}
     </div>
   </div>
   {% endfor %}
 
-  <!-- Parts Cards (hidden by default) -->
+  <!-- Parts Cards (hidden by default, one section per brand+equipment combo) -->
   {% for brand in site.data.parts.brands %}
-  {% for equip in brand.equipment %}
-  <div id="parts-{{ brand.id }}-{{ equip.type }}" class="parts-section hidden">
+  {% for equip in site.data.parts.equipment_types %}
+  <div id="parts-{{ brand.id }}-{{ equip.id }}" class="parts-section hidden">
     <div class="back-nav">
       <a href="#" class="back-link" data-back="equipment" data-brand="{{ brand.id }}">← Back to {{ brand.name }}</a>
     </div>
-    <div class="parts-grid">
-      {% for part in equip.parts %}
-      <div class="card part-card">
-        {% if part.image contains 'http' %}
-        <img src="{{ part.image }}" alt="{{ part.reference }}" class="part-image">
-        {% else %}
-        <img src="{{ part.image | relative_url }}" alt="{{ part.reference }}" class="part-image">
-        {% endif %}
-        <div class="part-info">
-          <h3>{{ part.reference }}</h3>
-          <p class="part-description">{{ part.description }}</p>
-          <span class="part-status">{{ part.status }}</span>
-          {% if part.compatible.size > 0 %}
-          <div class="compatible-section compatible-box">
-            <a href="#" class="compatible-toggle">{{ part.compatible.size }} compatible device(s) ▼</a>
-            <ul class="compatible-list hidden">
-              {% assign sorted_devices = part.compatible | sort: "brand" | sort: "model" %}
-              {% for device in sorted_devices %}
-              <li>{{ device.brand }} - {{ device.model }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          <a href="{{ part.files }}" class="part-link" target="_blank">Design files →</a>
-        </div>
-      </div>
-      {% endfor %}
+    <div class="parts-grid" data-brand="{{ brand.id }}" data-equipment="{{ equip.id }}">
+      <!-- Parts will be populated by JavaScript -->
     </div>
   </div>
   {% endfor %}
