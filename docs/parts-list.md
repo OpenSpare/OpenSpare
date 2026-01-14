@@ -3,7 +3,17 @@ layout: default
 title: Parts List
 ---
 
-Select a brand to browse available parts.
+<!-- Search Section -->
+<div class="search-section">
+  <h2>Find parts for your appliance</h2>
+  <input type="text" id="appliance-search" placeholder="Enter your appliance reference (e.g., NV66M3531BS)">
+  <div id="search-results" class="hidden">
+    <p id="search-results-count"></p>
+    <div id="search-results-cards"></div>
+  </div>
+</div>
+
+<div class="section-divider">— OR browse by brand —</div>
 
 <div id="catalog">
   <!-- Brand Cards -->
@@ -54,7 +64,7 @@ Select a brand to browse available parts.
           <p class="part-description">{{ part.description }}</p>
           <span class="part-status">{{ part.status }}</span>
           {% if part.compatible.size > 0 %}
-          <div class="compatible-section">
+          <div class="compatible-section compatible-box">
             <a href="#" class="compatible-toggle">{{ part.compatible.size }} compatible device(s) ▼</a>
             <ul class="compatible-list hidden">
               {% assign sorted_devices = part.compatible | sort: "brand" | sort: "model" %}
@@ -64,7 +74,7 @@ Select a brand to browse available parts.
             </ul>
           </div>
           {% endif %}
-          <a href="{{ part.files }}" class="part-link" target="_blank">View files →</a>
+          <a href="{{ part.files }}" class="part-link" target="_blank">Design files →</a>
         </div>
       </div>
       {% endfor %}
@@ -75,3 +85,7 @@ Select a brand to browse available parts.
 </div>
 
 <p class="icon-credits">Icons: <a href="https://www.flaticon.com/fr/icones-gratuites/four" title="four icônes">Oven by Good Ware</a>, <a href="https://www.flaticon.com/fr/icones-gratuites/refrigerateur" title="réfrigérateur icônes">Fridge by Freepik</a> - Flaticon</p>
+
+<script>
+var partsData = {{ site.data.parts | jsonify }};
+</script>
