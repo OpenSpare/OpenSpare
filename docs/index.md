@@ -1,51 +1,68 @@
 ---
 layout: default
+title: OpenSpare
 ---
 
-**OpenSpare** is an open-source initiative to design and share replacement parts for appliances, with the goal of extending their lifespan and reducing our environmental impact.
 
 ## Why OpenSpare?
 
-Many appliances break down because of simple parts:
-- burnt-out control boards,
-- worn-out mechanical buttons,
-- broken plastic pieces that are no longer available.
+Many appliances break down because of simple parts: burnt-out control boards, worn-out buttons, broken plastic pieces that are no longer available.
 
-Manufacturers often don't provide these parts, or only at a prohibitive cost.
-OpenSpare offers an alternative: a **free library** of designs that anyone can reuse, modify, and manufacture.
+Manufacturers often charge prohibitive prices or don't provide these parts anymore. **OpenSpare offers an alternative**: a free library of open-source designs that anyone can reuse, modify, and manufacture.
 
-We believe that access to open replacement parts is essential to make repair accessible to everyone.
-OpenSpare aims to become a **shared resource** that helps to:
-- extend the life of appliances,
-- reduce electronic waste,
-- save money,
-- and strengthen the autonomy of users and repairers.
+Like generic drugs that provide the same treatment at a lower cost, OpenSpare parts deliver the **same function** as original manufacturer parts — but openly and affordably.
+
+<div class="comparison-container">
+  <div class="comparison-slider">
+    <img src="{{ '/img/comparison/openspare.png' | relative_url }}" alt="OpenSpare replacement part">
+    <div class="comparison-before">
+      <img src="{{ '/img/comparison/original.png' | relative_url }}" alt="Original manufacturer part">
+    </div>
+    <div class="comparison-handle"></div>
+  </div>
+  <div class="comparison-labels">
+    <span class="label-original">Original part</span>
+    <span class="label-openspare">OpenSpare</span>
+  </div>
+</div>
+
+<div style="text-align: center;">
+  <a href="{{ '/parts-list' | relative_url }}" class="cta-button">Browse Parts</a>
+</div>
+
+---
+
+## What We Believe
+
+- **Repair should be accessible** to everyone
+- **Open designs** extend the life of appliances
+- **Sharing knowledge** reduces electronic waste
+- **User autonomy** saves money and empowers communities
+
+---
 
 ## What's Available?
 
 ### Printed Circuits
 
-We provide source files of printed circuits designed with KiCad. Each design includes:
-- **KiCad source files** (project, schematics, board) — freely reusable by anyone.
-- **Fabrication outputs** (Gerber files, NC drill files, Bill of Materials) — ready for manufacturing.
+We provide source files of printed circuits designed with KiCad:
+- **KiCad source files** (project, schematics, board) — freely reusable
+- **Fabrication outputs** (Gerber files, BOM) — ready for manufacturing
 
 ### 3D Models
 
 Coming soon...
 
-## Repository Structure
-
-- `kicad/` — component libraries (symbols, footprints & 3D models, datasheets)
-- `parts/` — designs including source files and fabrication files
+---
 
 ## Contributing
 
 All contributions are welcome:
-- Adding new parts (PCB, 3D, documentation)
+- Adding new parts (PCB, 3D, documentation) ([View the contribution guide](/contributing-pcb))
 - Improving existing designs
 - Manufacturing, testing and sharing feedback
 
-[View the contribution guide](/contributing-pcb)
+---
 
 ## License
 
