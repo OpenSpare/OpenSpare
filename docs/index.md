@@ -58,9 +58,11 @@ Coming soon...
 ## Contributing
 
 All contributions are welcome:
-- Adding new parts (PCB, 3D, documentation) ([View the contribution guide](/contributing-pcb))
+- Adding new parts (PCB, 3D, documentation)
 - Improving existing designs
 - Manufacturing, testing and sharing feedback
+
+[View the contribution guide on GitHub](https://github.com/OpenSpare/OpenSpare/blob/main/CONTRIBUTING.md)
 
 ---
 
