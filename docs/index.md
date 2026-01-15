@@ -3,6 +3,7 @@ layout: default
 title: OpenSpare
 ---
 
+<p class="tagline">Open-source replacement parts for appliances</p>
 
 ## Why OpenSpare?
 
