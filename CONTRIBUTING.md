@@ -62,3 +62,31 @@ OpenSpare libraries (symbols and footprints) are available in OpenSpare repo:
 - Footprints: OpenSpare/kicad/components/OpenSpare_footprints.pretty
 
 See KiCad's documentation to manage them.
+
+## Contributor Attribution
+
+As a designer, you can credit yourself for your contribution. This will display your GitHub profile picture, username, and optionally a tip link (e.g., Buy Me a Coffee) on the OpenSpare website.
+
+### How to add your attribution
+
+Create a file named `AUTHOR.yml` in the root of your design folder (e.g., `parts/samsung/oven/SMG_OVN_DE96-00994A/AUTHOR.yml`).
+
+### AUTHOR.yml format
+
+```yaml
+github: https://github.com/yourusername
+tip_url: https://buymeacoffee.com/yourusername
+tip_label: Buy me a coffee
+```
+
+**Fields:**
+- `github` (required): Your GitHub profile URL. Your profile picture and display name will be fetched automatically.
+- `tip_url` (optional): A link where people can tip you (Buy Me a Coffee, Ko-fi, PayPal, etc.)
+- `tip_label` (optional): Custom label for the tip button. Defaults to "Tip" if not specified.
+
+### Where it appears
+
+Your attribution will be displayed:
+- On part cards in the Parts Catalog
+- On news cards when your part is featured
+- On the detailed news post page

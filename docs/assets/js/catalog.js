@@ -1,6 +1,84 @@
 document.addEventListener('DOMContentLoaded', function() {
   if (typeof partsData === 'undefined') return;
 
+  // Simple YAML parser for AUTHOR.yml format
+  function parseSimpleYAML(text) {
+    var result = {};
+    var lines = text.split('\n');
+    lines.forEach(function(line) {
+      var match = line.match(/^(\w+):\s*(.+)$/);
+      if (match) {
+        result[match[1]] = match[2].trim();
+      }
+    });
+    return result;
+  }
+
+  // Convert GitHub repo URL to raw AUTHOR.yml URL
+  function getAuthorUrl(filesUrl) {
+    return filesUrl
+      .replace('github.com', 'raw.githubusercontent.com')
+      .replace('/tree/', '/')
+      + '/AUTHOR.yml';
+  }
+
+  // Extract GitHub username from URL
+  function getGitHubUsername(githubUrl) {
+    return githubUrl.replace('https://github.com/', '').split('/')[0];
+  }
+
+  // Fetch AUTHOR.yml for a part
+  async function fetchAuthor(filesUrl) {
+    var url = getAuthorUrl(filesUrl);
+    try {
+      var response = await fetch(url);
+      if (!response.ok) return null;
+      var text = await response.text();
+      return parseSimpleYAML(text);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Fetch GitHub profile info
+  async function fetchGitHubProfile(username) {
+    try {
+      var response = await fetch('https://api.github.com/users/' + username);
+      if (!response.ok) {
+        return { name: username, avatar: 'https://github.com/' + username + '.png' };
+      }
+      var data = await response.json();
+      return {
+        name: data.name || data.login,
+        avatar: data.avatar_url
+      };
+    } catch (e) {
+      return { name: username, avatar: 'https://github.com/' + username + '.png' };
+    }
+  }
+
+  // Render author section in a container
+  async function renderAuthorSection(container, filesUrl) {
+    var author = await fetchAuthor(filesUrl);
+    if (!author || !author.github) {
+      container.remove();
+      return;
+    }
+
+    var username = getGitHubUsername(author.github);
+    var profile = await fetchGitHubProfile(username);
+
+    var html = '<img src="' + profile.avatar + '" alt="' + profile.name + '" class="author-avatar">' +
+      '<a href="' + author.github + '" target="_blank" class="author-link">' + profile.name + '</a>';
+
+    if (author.tip_url) {
+      var tipLabel = author.tip_label || 'Tip';
+      html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+    }
+
+    container.innerHTML = html;
+  }
+
   // Helper: Get brand name from ID
   function getBrandName(brandId) {
     var brand = partsData.brands.find(function(b) { return b.id === brandId; });
@@ -53,8 +131,15 @@ document.addEventListener('DOMContentLoaded', function() {
         '<p class="part-description">' + part.description + '</p>' +
         '<span class="part-status">' + part.status + '</span>' +
         compatibleHtml +
+        '<div class="author-section" data-files="' + part.files + '"></div>' +
         '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
       '</div>';
+
+    // Async load author info
+    var authorSection = card.querySelector('.author-section');
+    if (authorSection && part.files) {
+      renderAuthorSection(authorSection, part.files);
+    }
 
     return card;
   }
@@ -118,8 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Back navigation
-  document.querySelectorAll('.back-link').forEach(function(link) {
+  // Back navigation (only for catalog links with data-back attribute)
+  document.querySelectorAll('.back-link[data-back]').forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var backTo = this.dataset.back;
@@ -157,6 +242,74 @@ document.addEventListener('DOMContentLoaded', function() {
         var toggle = list.previousElementSibling;
         if (toggle) toggle.textContent = toggle.textContent.replace('▲', '▼');
       });
+    }
+  });
+
+  // Helper: Get part by reference
+  function getPartByReference(reference) {
+    return partsData.parts.find(function(p) { return p.reference === reference; });
+  }
+
+  // Render author section specifically for news cards
+  async function renderNewsAuthorSection(container, filesUrl) {
+    var author = await fetchAuthor(filesUrl);
+    if (!author || !author.github) {
+      container.remove();
+      return;
+    }
+
+    var username = getGitHubUsername(author.github);
+    var profile = await fetchGitHubProfile(username);
+
+    var html = '<span class="author-label">Designed by</span>' +
+      '<a href="' + author.github + '" target="_blank" class="author-badge">' +
+        '<img src="' + profile.avatar + '" alt="' + profile.name + '" class="author-avatar">' +
+        '<span class="author-name">' + profile.name + '</span>' +
+      '</a>';
+
+    if (author.tip_url) {
+      var tipLabel = author.tip_label || 'Tip';
+      html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+    }
+
+    container.innerHTML = html;
+  }
+
+  // Initialize: Populate author sections in news cards
+  document.querySelectorAll('.news-author-section[data-part-reference]').forEach(function(section) {
+    var reference = section.dataset.partReference;
+    var part = getPartByReference(reference);
+    if (part && part.files) {
+      renderNewsAuthorSection(section, part.files);
+    } else {
+      section.remove();
+    }
+  });
+
+  // Initialize: Populate author section in post page
+  document.querySelectorAll('.post-author-row[data-part-reference]').forEach(function(row) {
+    var reference = row.dataset.partReference;
+    var part = getPartByReference(reference);
+    var cell = row.querySelector('.post-author-cell');
+    if (part && part.files && cell) {
+      fetchAuthor(part.files).then(function(author) {
+        if (!author || !author.github) {
+          row.remove();
+          return;
+        }
+        var username = getGitHubUsername(author.github);
+        fetchGitHubProfile(username).then(function(profile) {
+          var html = '<img src="' + profile.avatar + '" alt="' + profile.name + '" class="author-avatar">' +
+            '<a href="' + author.github + '" target="_blank" class="author-link">' + profile.name + '</a>';
+          if (author.tip_url) {
+            var tipLabel = author.tip_label || 'Tip';
+            html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+          }
+          cell.innerHTML = html;
+        });
+      });
+    } else {
+      row.remove();
     }
   });
 
@@ -228,8 +381,15 @@ document.addEventListener('DOMContentLoaded', function() {
               '<p class="part-description">' + part.description + '</p>' +
               '<span class="part-status">' + part.status + '</span>' +
               matchingHtml +
+              '<div class="author-section" data-files="' + part.files + '"></div>' +
               '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
             '</div>';
+
+          // Async load author info
+          var authorSection = card.querySelector('.author-section');
+          if (authorSection && part.files) {
+            renderAuthorSection(authorSection, part.files);
+          }
 
           searchResultsCards.appendChild(card);
         });
