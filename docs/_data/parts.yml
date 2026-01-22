@@ -5,6 +5,18 @@ brands:
   - id: bosch
     name: Bosch
     logo: /img/brands/bosch.png
+  - id: siemens
+    name: Siemens
+    logo: /img/brands/siemens.png
+  - id: balay
+    name: Balay
+    logo: /img/brands/balay.png
+  - id: neff
+    name: Neff
+    logo: /img/brands/neff.png
+  - id: constructa
+    name: Constructa
+    logo: /img/brands/constructa.png
 
 equipment_types:
   - id: oven
