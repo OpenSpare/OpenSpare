@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Parts List
+lang: en
 ---
 
 <!-- Search Section -->

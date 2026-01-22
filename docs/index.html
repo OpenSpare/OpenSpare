@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenSpare - Redirecting...</title>
+  <script>
+    (function() {
+      // Get browser language
+      var lang = navigator.language || navigator.userLanguage;
+      var langCode = lang.split('-')[0].toLowerCase();
+
+      // Supported languages
+      var supported = ['en', 'fr'];
+
+      // Default to English if not supported
+      var targetLang = supported.includes(langCode) ? langCode : 'en';
+
+      // Get the base URL (handles both local and GitHub Pages)
+      var baseUrl = window.location.pathname.replace(/\/$/, '');
+
+      // Redirect to language-specific homepage
+      window.location.replace(baseUrl + '/' + targetLang + '/');
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=en/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting... / Redirection en cours...</p>
+  <p><a href="en/">English</a> | <a href="fr/">Français</a></p>
+</body>
+</html>

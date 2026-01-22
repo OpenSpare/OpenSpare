@@ -21,18 +21,22 @@ brands:
 equipment_types:
   - id: oven
     name: Oven
+    name_fr: Four
     icon: /img/equipments/oven.png
   - id: fridge
     name: Fridge
+    name_fr: Réfrigérateur
     icon: /img/equipments/fridge.png
 
 parts:
   - reference: DE96-00994A
     equipment: oven
     description: Oven's program selector
+    description_fr: Sélecteur de programme de four
     image: https://github.com/OpenSpare/OpenSpare/blob/main/parts/samsung/oven/SMG_OVN_DE96-00994A/pictures/Samsung_DE96-00994A_original_top_picture.jpg?raw=true
     files: https://github.com/OpenSpare/OpenSpare/tree/main/parts/samsung/oven/SMG_OVN_DE96-00994A
     status: Published rev 1 (not tested)
+    status_fr: Publié rev 1 (non testé)
     compatible:
       - brand: samsung
         model: CQ1570U/XEF

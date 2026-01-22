@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   if (typeof partsData === 'undefined') return;
 
+  // Detect page language for translations
+  var pageLang = document.documentElement.lang || 'en';
+  var bmcText = pageLang === 'fr' ? 'Offrez-moi un café' : 'Buy me a coffee';
+  var designedByText = pageLang === 'fr' ? 'Conçu par' : 'Designed by';
+  var compatibleDevicesText = pageLang === 'fr' ? ' appareil(s) compatible(s)' : ' compatible device(s)';
+  var partsText = pageLang === 'fr' ? ' pièce(s)' : ' part(s)';
+  var designFilesText = pageLang === 'fr' ? 'Fichiers de conception →' : 'Design files →';
+  var partsFoundText = pageLang === 'fr' ? ' pièce(s) trouvée(s) pour "' : ' part(s) found for "';
+  var noPartsFoundText = pageLang === 'fr' ? 'Aucune pièce trouvée pour "' : 'No parts found for "';
+  var matchesText = pageLang === 'fr' ? 'Compatible avec ' : 'Matches ';
+  var devicesText = pageLang === 'fr' ? ' appareil(s)' : ' device(s)';
+
   // Simple YAML parser for AUTHOR.yml format
   function parseSimpleYAML(text) {
     var result = {};
@@ -72,8 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       '<a href="' + author.github + '" target="_blank" class="author-link">' + profile.name + '</a>';
 
     if (author.tip_url) {
-      var tipLabel = author.tip_label || 'Tip';
-      html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+      html += '<a href="' + author.tip_url + '" target="_blank" class="bmc-btn"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt=""><span>' + bmcText + '</span></a>';
     }
 
     container.innerHTML = html;
@@ -88,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Helper: Get equipment name from ID
   function getEquipmentName(equipId) {
     var equip = partsData.equipment_types.find(function(e) { return e.id === equipId; });
-    return equip ? equip.name : equipId;
+    if (!equip) return equipId;
+    return pageLang === 'fr' && equip.name_fr ? equip.name_fr : equip.name;
   }
 
   // Helper: Get parts compatible with a brand for an equipment type
@@ -117,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return (a.brand + a.model).localeCompare(b.brand + b.model);
       });
       compatibleHtml = '<div class="compatible-section compatible-box">' +
-        '<a href="#" class="compatible-toggle">' + part.compatible.length + ' compatible device(s) ▼</a>' +
+        '<a href="#" class="compatible-toggle">' + part.compatible.length + compatibleDevicesText + ' ▼</a>' +
         '<ul class="compatible-list hidden">';
       sortedDevices.forEach(function(device) {
         compatibleHtml += '<li>' + getBrandName(device.brand) + ' - ' + device.model + '</li>';
@@ -128,11 +140,11 @@ document.addEventListener('DOMContentLoaded', function() {
     card.innerHTML = '<img src="' + imgSrc + '" alt="' + part.reference + '" class="part-image">' +
       '<div class="part-info">' +
         '<h3>' + part.reference + '</h3>' +
-        '<p class="part-description">' + part.description + '</p>' +
-        '<span class="part-status">' + part.status + '</span>' +
+        '<p class="part-description">' + (pageLang === 'fr' && part.description_fr ? part.description_fr : part.description) + '</p>' +
+        '<span class="part-status">' + (pageLang === 'fr' && part.status_fr ? part.status_fr : part.status) + '</span>' +
         compatibleHtml +
         '<div class="author-section" data-files="' + part.files + '"></div>' +
-        '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
+        '<a href="' + part.files + '" class="part-link" target="_blank">' + designFilesText + '</a>' +
       '</div>';
 
     // Async load author info
@@ -166,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var brandId = span.dataset.brand;
     var equipmentId = span.dataset.equipment;
     var count = getPartsForBrandAndEquipment(brandId, equipmentId).length;
-    span.textContent = count + ' part(s)';
+    span.textContent = count + partsText;
 
     // Hide equipment card if no parts
     if (count === 0) {
@@ -261,15 +273,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var username = getGitHubUsername(author.github);
     var profile = await fetchGitHubProfile(username);
 
-    var html = '<span class="author-label">Designed by</span>' +
+    var html = '<span class="author-label">' + designedByText + '</span>' +
       '<a href="' + author.github + '" target="_blank" class="author-badge">' +
         '<img src="' + profile.avatar + '" alt="' + profile.name + '" class="author-avatar">' +
         '<span class="author-name">' + profile.name + '</span>' +
       '</a>';
 
     if (author.tip_url) {
-      var tipLabel = author.tip_label || 'Tip';
-      html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+      html += '<a href="' + author.tip_url + '" target="_blank" class="bmc-btn"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt=""><span>' + bmcText + '</span></a>';
     }
 
     container.innerHTML = html;
@@ -302,8 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
           var html = '<img src="' + profile.avatar + '" alt="' + profile.name + '" class="author-avatar">' +
             '<a href="' + author.github + '" target="_blank" class="author-link">' + profile.name + '</a>';
           if (author.tip_url) {
-            var tipLabel = author.tip_label || 'Tip';
-            html += '<a href="' + author.tip_url + '" target="_blank" class="tip-button">' + tipLabel + '</a>';
+            html += '<a href="' + author.tip_url + '" target="_blank" class="bmc-btn"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt=""><span>' + bmcText + '</span></a>';
           }
           cell.innerHTML = html;
         });
@@ -348,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Display results
       if (matchingParts.length > 0) {
-        searchResultsCount.textContent = matchingParts.length + ' part(s) found for "' + query + '"';
+        searchResultsCount.textContent = matchingParts.length + partsFoundText + query + '"';
         searchResultsCards.innerHTML = '';
         searchResultsCards.className = 'parts-grid';
 
@@ -368,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function() {
           });
 
           var matchingHtml = '<div class="matching-devices">' +
-            '<a href="#" class="compatible-toggle">Matches ' + match.matchingDevices.length + ' device(s) ▼</a>' +
+            '<a href="#" class="compatible-toggle">' + matchesText + match.matchingDevices.length + devicesText + ' ▼</a>' +
             '<ul class="matching-list hidden">';
           sortedMatchingDevices.forEach(function(d) {
             matchingHtml += '<li>' + getBrandName(d.brand) + ' - ' + d.model + '</li>';
@@ -378,11 +388,11 @@ document.addEventListener('DOMContentLoaded', function() {
           card.innerHTML = '<img src="' + imgSrc + '" alt="' + part.reference + '" class="part-image">' +
             '<div class="part-info">' +
               '<h3>' + part.reference + '</h3>' +
-              '<p class="part-description">' + part.description + '</p>' +
-              '<span class="part-status">' + part.status + '</span>' +
+              '<p class="part-description">' + (pageLang === 'fr' && part.description_fr ? part.description_fr : part.description) + '</p>' +
+              '<span class="part-status">' + (pageLang === 'fr' && part.status_fr ? part.status_fr : part.status) + '</span>' +
               matchingHtml +
               '<div class="author-section" data-files="' + part.files + '"></div>' +
-              '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
+              '<a href="' + part.files + '" class="part-link" target="_blank">' + designFilesText + '</a>' +
             '</div>';
 
           // Async load author info
@@ -396,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         searchResults.classList.remove('hidden');
       } else {
-        searchResultsCount.textContent = 'No parts found for "' + query + '"';
+        searchResultsCount.textContent = noPartsFoundText + query + '"';
         searchResultsCards.innerHTML = '';
         searchResults.classList.remove('hidden');
       }
