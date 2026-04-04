@@ -76,4 +76,94 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+
+  // Appliance search functionality
+  var searchInput = document.getElementById('appliance-search');
+  var searchResults = document.getElementById('search-results');
+  var searchResultsCount = document.getElementById('search-results-count');
+  var searchResultsCards = document.getElementById('search-results-cards');
+
+  if (searchInput && typeof partsData !== 'undefined') {
+    searchInput.addEventListener('input', function() {
+      var query = this.value.trim().toUpperCase();
+
+      if (query.length < 3) {
+        searchResults.classList.add('hidden');
+        searchResultsCards.innerHTML = '';
+        return;
+      }
+
+      // Search through all parts
+      var matchingParts = [];
+      partsData.brands.forEach(function(brand) {
+        brand.equipment.forEach(function(equip) {
+          equip.parts.forEach(function(part) {
+            if (part.compatible && part.compatible.length > 0) {
+              var matchingDevices = part.compatible.filter(function(device) {
+                return device.model.toUpperCase().includes(query);
+              });
+              if (matchingDevices.length > 0) {
+                matchingParts.push({
+                  brand: brand.name,
+                  equipment: equip.name,
+                  part: part,
+                  matchingDevices: matchingDevices
+                });
+              }
+            }
+          });
+        });
+      });
+
+      // Display results
+      if (matchingParts.length > 0) {
+        searchResultsCount.textContent = matchingParts.length + ' part(s) found for "' + query + '"';
+        searchResultsCards.innerHTML = '';
+        searchResultsCards.className = 'parts-grid';
+
+        matchingParts.forEach(function(match) {
+          var part = match.part;
+          var card = document.createElement('div');
+          card.className = 'card part-card';
+
+          var imgSrc = part.image;
+          if (!imgSrc.includes('http')) {
+            imgSrc = document.baseURI.replace(/\/[^\/]*$/, '') + imgSrc;
+          }
+
+          // Build matching devices list
+          var maxDisplay = 10;
+          var totalDevices = match.matchingDevices.length;
+          var devicesToShow = match.matchingDevices.slice(0, maxDisplay);
+
+          var matchingHtml = '<div class="matching-devices"><span class="matching-label">Matches:</span><ul class="matching-list">';
+          devicesToShow.forEach(function(d) {
+            matchingHtml += '<li>' + d.brand + ' ' + d.model + '</li>';
+          });
+          matchingHtml += '</ul>';
+          if (totalDevices > maxDisplay) {
+            matchingHtml += '<span class="matching-more">(+ ' + (totalDevices - maxDisplay) + ' more)</span>';
+          }
+          matchingHtml += '</div>';
+
+          card.innerHTML = '<img src="' + imgSrc + '" alt="' + part.reference + '" class="part-image">' +
+            '<div class="part-info">' +
+              '<h3>' + part.reference + '</h3>' +
+              '<p class="part-description">' + part.description + '</p>' +
+              matchingHtml +
+              '<span class="part-status">' + part.status + '</span>' +
+              '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
+            '</div>';
+
+          searchResultsCards.appendChild(card);
+        });
+
+        searchResults.classList.remove('hidden');
+      } else {
+        searchResultsCount.textContent = 'No parts found for "' + query + '"';
+        searchResultsCards.innerHTML = '';
+        searchResults.classList.remove('hidden');
+      }
+    });
+  }
 });
