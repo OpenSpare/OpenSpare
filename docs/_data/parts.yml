@@ -103,8 +103,4638 @@ parts:
 
   - reference: "10024820"
     equipment: fridge
-    description: Fridge part
-    image: /logo/medium_logo_openspare_yellow_400px.png
+    description: Fridge LED light board
+    description_fr: Carte LED de réfrigérateur
+    image: https://github.com/OpenSpare/OpenSpare/blob/main/parts/bosch/fridge/BSH_FRG_10024820/pictures/Bosch_10024820_original_top_picture.png?raw=true
     files: https://github.com/OpenSpare/OpenSpare/tree/main/parts/bosch/fridge/BSH_FRG_10024820
-    status: In development
-    compatible: []
+    status: Published rev 1 (not tested)
+    status_fr: Publié rev 1 (non testé)
+    compatible:
+      - brand: bosch
+        model: KGE36DB4006
+      - brand: bosch
+        model: KGE36DB4008
+      - brand: bosch
+        model: KGE36DB4009
+      - brand: bosch
+        model: KGE36DL4101
+      - brand: bosch
+        model: KGE36DL4103
+      - brand: bosch
+        model: KGE36DL4104
+      - brand: bosch
+        model: KGE36DL4105
+      - brand: bosch
+        model: KGE36DL4106
+      - brand: bosch
+        model: KGE36VL4A01
+      - brand: bosch
+        model: KGE39AI41E01
+      - brand: bosch
+        model: KGE39AI41E02
+      - brand: bosch
+        model: KGE39AI41E04
+      - brand: bosch
+        model: KGE39AI41E05
+      - brand: bosch
+        model: KGE39AI41E06
+      - brand: bosch
+        model: KGE39AI41E07
+      - brand: bosch
+        model: KGE39AI41E08
+      - brand: bosch
+        model: KGE39AI4201
+      - brand: bosch
+        model: KGE39AI4203
+      - brand: bosch
+        model: KGE39AI4204
+      - brand: bosch
+        model: KGE39AI4205
+      - brand: bosch
+        model: KGE39AI4206
+      - brand: bosch
+        model: KGE39AI4207
+      - brand: bosch
+        model: KGE39AL4201
+      - brand: bosch
+        model: KGE39AL4202
+      - brand: bosch
+        model: KGE39AL4205
+      - brand: bosch
+        model: KGE39AL4207
+      - brand: bosch
+        model: KGE39AL4209
+      - brand: bosch
+        model: KGE39AL4210
+      - brand: bosch
+        model: KGE39AL4211
+      - brand: bosch
+        model: KGE39AL4303
+      - brand: bosch
+        model: KGE39AL4304
+      - brand: bosch
+        model: KGE39AL4305
+      - brand: bosch
+        model: KGE39AL4306
+      - brand: bosch
+        model: KGE39AL4307
+      - brand: bosch
+        model: KGE39AL4308
+      - brand: bosch
+        model: KGE39AL4309
+      - brand: bosch
+        model: KGE39AW4201
+      - brand: bosch
+        model: KGE39AW4202
+      - brand: bosch
+        model: KGE39AW4204
+      - brand: bosch
+        model: KGE39AW4205
+      - brand: bosch
+        model: KGE39AW4206
+      - brand: bosch
+        model: KGE39AW4207
+      - brand: bosch
+        model: KGE39BI4001
+      - brand: bosch
+        model: KGE39BI4002
+      - brand: bosch
+        model: KGE39BI4004
+      - brand: bosch
+        model: KGE39BI4005
+      - brand: bosch
+        model: KGE39BI4006
+      - brand: bosch
+        model: KGE39BI4007
+      - brand: bosch
+        model: KGE39BI4008
+      - brand: bosch
+        model: KGE39BI4401
+      - brand: bosch
+        model: KGE39BI4402
+      - brand: bosch
+        model: KGE39BI4403
+      - brand: bosch
+        model: KGE39BI4404
+      - brand: bosch
+        model: KGE39BI4405
+      - brand: bosch
+        model: KGE39BI4406
+      - brand: bosch
+        model: KGE39BI4407
+      - brand: bosch
+        model: KGE39BI4408
+      - brand: bosch
+        model: KGE39BI4411
+      - brand: bosch
+        model: KGE39BI4413
+      - brand: bosch
+        model: KGE39BL4002
+      - brand: bosch
+        model: KGE39BL4004
+      - brand: bosch
+        model: KGE39BL4008
+      - brand: bosch
+        model: KGE39BL4009
+      - brand: bosch
+        model: KGE39BL4011
+      - brand: bosch
+        model: KGE39BL40G02
+      - brand: bosch
+        model: KGE39BL4102
+      - brand: bosch
+        model: KGE39BL4103
+      - brand: bosch
+        model: KGE39BL4104
+      - brand: bosch
+        model: KGE39BL4105
+      - brand: bosch
+        model: KGE39BL4106
+      - brand: bosch
+        model: KGE39BL4107
+      - brand: bosch
+        model: KGE39BW4001
+      - brand: bosch
+        model: KGE39BW4002
+      - brand: bosch
+        model: KGE39BW4004
+      - brand: bosch
+        model: KGE39BW4005
+      - brand: bosch
+        model: KGE39BW41G01
+      - brand: bosch
+        model: KGE39BW41G02
+      - brand: bosch
+        model: KGE39EW4301
+      - brand: bosch
+        model: KGE39EW4302
+      - brand: bosch
+        model: KGE39EW4304
+      - brand: bosch
+        model: KGE39EW4305
+      - brand: bosch
+        model: KGE39EW4307
+      - brand: bosch
+        model: KGE39ML4089
+      - brand: bosch
+        model: KGE39ML4090
+      - brand: bosch
+        model: KGE39ML4091
+      - brand: bosch
+        model: KGE39ML4093
+      - brand: bosch
+        model: KGE39ML4096
+      - brand: bosch
+        model: KGE39ML4097
+      - brand: bosch
+        model: KGE39ML4098
+      - brand: bosch
+        model: KGN34VB35G01
+      - brand: bosch
+        model: KGN34VB35G02
+      - brand: bosch
+        model: KGN34VB35G03
+      - brand: bosch
+        model: KGN34VL3501
+      - brand: bosch
+        model: KGN34VL3502
+      - brand: bosch
+        model: KGN34VL3503
+      - brand: bosch
+        model: KGN34VL35G01
+      - brand: bosch
+        model: KGN34VL35G02
+      - brand: bosch
+        model: KGN34VL35G03
+      - brand: bosch
+        model: KGN34VL3A02
+      - brand: bosch
+        model: KGN34VL3A03
+      - brand: bosch
+        model: KGN34VW35G01
+      - brand: bosch
+        model: KGN34VW35G02
+      - brand: bosch
+        model: KGN34VW35G05
+      - brand: bosch
+        model: KGN34VW35G06
+      - brand: bosch
+        model: KGN34XL35G01
+      - brand: bosch
+        model: KGN34XL35G04
+      - brand: bosch
+        model: KGN34XW35G01
+      - brand: bosch
+        model: KGN34XW35G04
+      - brand: bosch
+        model: KGN36EI4601
+      - brand: bosch
+        model: KGN36EI4620
+      - brand: bosch
+        model: KGN36EI4622
+      - brand: bosch
+        model: KGN36EI4624
+      - brand: bosch
+        model: KGN36IJ3A05
+      - brand: bosch
+        model: KGN36IJ3A06
+      - brand: bosch
+        model: KGN36IJ3AG01
+      - brand: bosch
+        model: KGN36IJ3AG02
+      - brand: bosch
+        model: KGW36XL30S01
+      - brand: bosch
+        model: KGW36XL30S02
+      - brand: bosch
+        model: KGW36XL30S03
+      - brand: bosch
+        model: KGW36XL30S05
+      - brand: bosch
+        model: KGW36XL30S06
+      - brand: bosch
+        model: KGW36XL30S07
+      - brand: bosch
+        model: KSV29UL3P01
+      - brand: bosch
+        model: KSV29VL3P01
+      - brand: bosch
+        model: KSV29VW3P01
+      - brand: bosch
+        model: KSV33UW3P01
+      - brand: bosch
+        model: KSV33VL3P01
+      - brand: bosch
+        model: KSV33VL3PG01
+      - brand: bosch
+        model: KSV36CL3P01
+      - brand: bosch
+        model: KSV36CW3P01
+      - brand: bosch
+        model: KSV36UW3P01
+      - brand: bosch
+        model: KSV36VB3P01
+      - brand: bosch
+        model: KSV36VB3PG01
+      - brand: bosch
+        model: KSV36VL3P01
+      - brand: bosch
+        model: KSV36VL3PG01
+      - brand: bosch
+        model: KSV36VL4P01
+      - brand: bosch
+        model: KSV36VW30N01
+      - brand: bosch
+        model: KSV36VW31U01
+      - brand: bosch
+        model: KSV36VW3P01
+      - brand: bosch
+        model: KSV36VW3PG01
+      - brand: bosch
+        model: KSV36VW4P01
+      - brand: bosch
+        model: KS36FPI3P01
+      - brand: bosch
+        model: KS36FPI3P28
+      - brand: bosch
+        model: KS36FPI4P13
+      - brand: bosch
+        model: KS36FPI4P20
+      - brand: bosch
+        model: KS36FPI4P25
+      - brand: bosch
+        model: KS36FPI4P28
+      - brand: bosch
+        model: KS36FPW3P25
+      - brand: bosch
+        model: KGN34XL35G05
+      - brand: bosch
+        model: KGN34XW35G05
+      - brand: bosch
+        model: KGN36XI32Z01
+      - brand: bosch
+        model: KGN36XI32Z03
+      - brand: bosch
+        model: KGN36XI3P02
+      - brand: bosch
+        model: KGN36XI4604
+      - brand: bosch
+        model: KGN36XI4606
+      - brand: bosch
+        model: KGN36XI4607
+      - brand: bosch
+        model: KGN36XI4608
+      - brand: bosch
+        model: KGN36XI4609
+      - brand: bosch
+        model: KGN36XI4610
+      - brand: bosch
+        model: KGN36XI4611
+      - brand: bosch
+        model: KGN36XI4P05
+      - brand: bosch
+        model: KGN36XI4P06
+      - brand: bosch
+        model: KGN36XI4P08
+      - brand: bosch
+        model: KGN36XL30408
+      - brand: bosch
+        model: KGN36XL30409
+      - brand: bosch
+        model: KGN36XL30U07
+      - brand: bosch
+        model: KGN36XL30U08
+      - brand: bosch
+        model: KGN36XW30U07
+      - brand: bosch
+        model: KGN36XW30U08
+      - brand: bosch
+        model: KGN36XW30U09
+      - brand: bosch
+        model: KGN36XW4P03
+      - brand: bosch
+        model: KGN36XW4P05
+      - brand: bosch
+        model: KGN36XW4P06
+      - brand: bosch
+        model: KGN39IJ3A04
+      - brand: bosch
+        model: KGN39IJ3A05
+      - brand: bosch
+        model: KGN39IJ3A06
+      - brand: bosch
+        model: KGN39IJ3A07
+      - brand: bosch
+        model: KGN39IJ3A08
+      - brand: bosch
+        model: KGN39IJ3AG01
+      - brand: bosch
+        model: KGN39IJ3AG02
+      - brand: bosch
+        model: KGN39IJ4A01
+      - brand: bosch
+        model: KGN39IJ4A02
+      - brand: bosch
+        model: KGN39IJ4A03
+      - brand: bosch
+        model: KGN39IJ4A04
+      - brand: bosch
+        model: KGN39IJ4A05
+      - brand: bosch
+        model: KGN39IJ4A06
+      - brand: bosch
+        model: KGN39IJ4A07
+      - brand: bosch
+        model: KGN39IJ4A08
+      - brand: bosch
+        model: KGN39IJ4A09
+      - brand: bosch
+        model: KGN39IJ4AQ04
+      - brand: bosch
+        model: KGN39VW4503
+      - brand: bosch
+        model: KGN39XI3P03
+      - brand: bosch
+        model: KGN39XI4A03
+      - brand: bosch
+        model: KGN39XI4A05
+      - brand: bosch
+        model: KGN39XI4A08
+      - brand: bosch
+        model: KGN39XI4P03
+      - brand: bosch
+        model: KGN39XI4P05
+      - brand: bosch
+        model: KGN39XI4P06
+      - brand: bosch
+        model: KGN39XI4P08
+      - brand: bosch
+        model: KGN39XL35G07
+      - brand: bosch
+        model: KGN39XL35G11
+      - brand: bosch
+        model: KGN39XW3609
+      - brand: bosch
+        model: KGN39XW3610
+      - brand: bosch
+        model: KGN39XW3611
+      - brand: bosch
+        model: KGN39XW3613
+      - brand: bosch
+        model: KGN39XW3614
+      - brand: bosch
+        model: KGN39XW4P03
+      - brand: bosch
+        model: KGN39XW4P05
+      - brand: bosch
+        model: KGN39XW4P06
+      - brand: bosch
+        model: KGN39XW4P08
+      - brand: bosch
+        model: KGV33VW3104
+      - brand: bosch
+        model: KGV36VW2204
+      - brand: bosch
+        model: KGV36VW2205
+      - brand: bosch
+        model: KGV36VW32S05
+      - brand: bosch
+        model: KGV39VI30601
+      - brand: bosch
+        model: KGV39VI3106
+      - brand: bosch
+        model: KGV39VW32S05
+      - brand: bosch
+        model: KSV29UL3P02
+      - brand: bosch
+        model: KSV29VL3P02
+      - brand: bosch
+        model: KSV29VW3P02
+      - brand: bosch
+        model: KSV29VW3PH01
+      - brand: bosch
+        model: KSV29VW4P01
+      - brand: bosch
+        model: KSV33UW3P02
+      - brand: bosch
+        model: KSV33VL3P02
+      - brand: bosch
+        model: KSV33VL3PG02
+      - brand: bosch
+        model: KSV36CL3P02
+      - brand: bosch
+        model: KSV36CW3P02
+      - brand: bosch
+        model: KSV36FI3P01
+      - brand: bosch
+        model: KSV36FI3P02
+      - brand: bosch
+        model: KSV36UW3P02
+      - brand: bosch
+        model: KSV36VI3P01
+      - brand: bosch
+        model: KSV36VI3P02
+      - brand: bosch
+        model: KSV36VL3P02
+      - brand: bosch
+        model: KSV36VL3PG02
+      - brand: bosch
+        model: KSV36VW30N02
+      - brand: bosch
+        model: KSV36VW31U02
+      - brand: bosch
+        model: KSV36VW3P02
+      - brand: bosch
+        model: KSV36VW3PG02
+      - brand: bosch
+        model: KSV36VW3PH01
+      - brand: bosch
+        model: KSV36VW3PH02
+      - brand: bosch
+        model: KGE36DL4095
+      - brand: bosch
+        model: KGN39EI4504
+      - brand: bosch
+        model: KGN39EI4506
+      - brand: bosch
+        model: KGN39EI4507
+      - brand: bosch
+        model: KGN39EI4508
+      - brand: bosch
+        model: KGN39EI4509
+      - brand: bosch
+        model: KGN39EI4511
+      - brand: bosch
+        model: KGN39EI4512
+      - brand: bosch
+        model: KGN39EI4513
+      - brand: bosch
+        model: KGN39EI4514
+      - brand: bosch
+        model: KGN39EI4516
+      - brand: bosch
+        model: KGN39IJ3AG05
+      - brand: bosch
+        model: KGN56XI3A15
+      - brand: bosch
+        model: KGN56XL3013
+      - brand: bosch
+        model: KGN56VI30N13
+      - brand: bosch
+        model: KGN56VI30U16
+      - brand: bosch
+        model: KGN56VI30U07
+      - brand: bosch
+        model: KGN56VI30N11
+      - brand: bosch
+        model: KGN56VI30N12
+      - brand: bosch
+        model: KGN56VI30U09
+      - brand: bosch
+        model: KGN56VI3E804
+      - brand: bosch
+        model: KGN56VI30U13
+      - brand: bosch
+        model: KGN56VI30U18
+      - brand: bosch
+        model: KGN56VI3E806
+      - brand: bosch
+        model: KGN56VI30U08
+      - brand: bosch
+        model: KGN56VI3E808
+      - brand: bosch
+        model: KGN56VI30U15
+      - brand: bosch
+        model: KGN56VI30U10
+      - brand: bosch
+        model: KGN56VI3E807
+      - brand: bosch
+        model: KGN56VI30U14
+      - brand: bosch
+        model: KGN56VI30U11
+      - brand: bosch
+        model: KGN56VI20R02
+      - brand: bosch
+        model: KGN56VI20R05
+      - brand: bosch
+        model: KGN56VI20R07
+      - brand: bosch
+        model: KGN56VI20R06
+      - brand: bosch
+        model: KGN56VI20R09
+      - brand: bosch
+        model: KGN56XI4020
+      - brand: bosch
+        model: KGN56XI4014
+      - brand: bosch
+        model: KGN56XI40J08
+      - brand: bosch
+        model: KGN56VL30N17
+      - brand: bosch
+        model: KGN56XI40J09
+      - brand: bosch
+        model: KGN56VI30N03
+      - brand: bosch
+        model: KGN56XI4015
+      - brand: bosch
+        model: KGN56VI30N06
+      - brand: bosch
+        model: KGN56VL30N16
+      - brand: bosch
+        model: KGN56XI4018
+      - brand: bosch
+        model: KGN56VI30U05
+      - brand: bosch
+        model: KGN56XI4013
+      - brand: bosch
+        model: KGN56XL3006
+      - brand: bosch
+        model: KGN56XI4016
+      - brand: bosch
+        model: KGN56XI4010
+      - brand: bosch
+        model: KGN56XL3010
+      - brand: bosch
+        model: KGN56XL3005
+      - brand: bosch
+        model: KGN56VI30U17
+      - brand: bosch
+        model: KGN56XL3007
+      - brand: bosch
+        model: KGN56XL3008
+      - brand: bosch
+        model: KGN56XL3009
+      - brand: bosch
+        model: KGN56VL30N20
+      - brand: bosch
+        model: KGN56VL30N19
+      - brand: bosch
+        model: KGN56XI4009
+      - brand: bosch
+        model: KGN56XI4007
+      - brand: bosch
+        model: KGN56XI4006
+      - brand: bosch
+        model: KGN56VL30N21
+      - brand: bosch
+        model: KGN56VL40B06
+      - brand: bosch
+        model: KGN56XI4011
+      - brand: bosch
+        model: KGN56VL40B04
+      - brand: bosch
+        model: KGN56XI4017
+      - brand: bosch
+        model: KGN56VL30N23
+      - brand: bosch
+        model: KGN56IJ3AN02
+      - brand: bosch
+        model: KGN56VI30U19
+      - brand: bosch
+        model: KGN56VI30Z07
+      - brand: bosch
+        model: KGN56VI30N15
+      - brand: bosch
+        model: KGN56VI30N16
+      - brand: bosch
+        model: KGN56VI30N10
+      - brand: bosch
+        model: KGN56VI30N14
+      - brand: bosch
+        model: KGN56VI30N08
+      - brand: bosch
+        model: KGN56VI30N01
+      - brand: bosch
+        model: KG56NVI31M10
+      - brand: bosch
+        model: KG56NVI30N01
+      - brand: bosch
+        model: KG56NVI30N03
+      - brand: bosch
+        model: KG56NVI30N04
+      - brand: bosch
+        model: KGD56VL30U06
+      - brand: bosch
+        model: KGD56XI3A12
+      - brand: bosch
+        model: KGD56VL30U08
+      - brand: bosch
+        model: KGD56XI3A11
+      - brand: bosch
+        model: KGD56XI3A13
+      - brand: bosch
+        model: KGN39IJ3B01
+      - brand: bosch
+        model: KG56NVW30U10
+      - brand: bosch
+        model: KGD56XI3A14
+      - brand: bosch
+        model: KGD56VL30U09
+      - brand: bosch
+        model: KGD56VL30U10
+      - brand: bosch
+        model: KGD56XI3A10
+      - brand: bosch
+        model: KGD56VL30U11
+      - brand: bosch
+        model: KGD56XI3A07
+      - brand: bosch
+        model: KGD56XI3A08
+      - brand: bosch
+        model: KGN49XW3011
+      - brand: bosch
+        model: KGN49XW3010
+      - brand: bosch
+        model: KG56NVI31M04
+      - brand: bosch
+        model: KG56NVI31M07
+      - brand: bosch
+        model: KG56NVW30U12
+      - brand: bosch
+        model: KG56NXI4016
+      - brand: bosch
+        model: KG56NVI30M09
+      - brand: bosch
+        model: KG56NXI4018
+      - brand: bosch
+        model: KG56NVI31M09
+      - brand: bosch
+        model: KG56NXI4017
+      - brand: bosch
+        model: KG56NXI4015
+      - brand: bosch
+        model: KG56NXI4013
+      - brand: bosch
+        model: KG56NXI4019
+      - brand: bosch
+        model: KG56NXI4010
+      - brand: bosch
+        model: KGN46XL3002
+      - brand: bosch
+        model: KGN46XW30N02
+      - brand: bosch
+        model: KGN46XL4002
+      - brand: bosch
+        model: KGN46XL30U02
+      - brand: bosch
+        model: KG34NVL35G01
+      - brand: bosch
+        model: KG34NVW35G01
+      - brand: bosch
+        model: KG34NVI35G01
+      - brand: bosch
+        model: KG39NEI4504
+      - brand: bosch
+        model: KGN56XL3016
+      - brand: bosch
+        model: KGN56XL3017
+      - brand: bosch
+        model: KG39NXI4230
+      - brand: bosch
+        model: KG39NXI4232
+      - brand: bosch
+        model: KGN56VI30N09
+      - brand: bosch
+        model: KGN56VI30N07
+      - brand: bosch
+        model: KGN56XL3015
+      - brand: bosch
+        model: KGN56XL3014
+      - brand: bosch
+        model: KG36NVL3504
+      - brand: bosch
+        model: KGN56XL3011
+      - brand: bosch
+        model: KGN49XI4013
+      - brand: bosch
+        model: KGN49XL30G02
+      - brand: bosch
+        model: KGN49XL3008
+      - brand: bosch
+        model: KGN49XL30G07
+      - brand: bosch
+        model: KGN49XL30605
+      - brand: bosch
+        model: KGN49XL3007
+      - brand: bosch
+        model: KGN49XL3010
+      - brand: bosch
+        model: KG56NVI30N11
+      - brand: bosch
+        model: KG56NXI4006
+      - brand: bosch
+        model: KG56NXI4009
+      - brand: bosch
+        model: KGN49XI4012
+      - brand: bosch
+        model: KG56NVI30N12
+      - brand: bosch
+        model: KGN49XI3008
+      - brand: bosch
+        model: KG56NVX30N15
+      - brand: bosch
+        model: KGN49XI4011
+      - brand: bosch
+        model: KG56NVI30N16
+      - brand: bosch
+        model: KGN49XI3007
+      - brand: bosch
+        model: KGN49XI3009
+      - brand: bosch
+        model: KGN49XL30G04
+      - brand: bosch
+        model: KG56NVI30N05
+      - brand: bosch
+        model: KG56NVI30N13
+      - brand: bosch
+        model: KG56NVI30U08
+      - brand: bosch
+        model: KG56NVX30N16
+      - brand: bosch
+        model: KG56NVI30N14
+      - brand: bosch
+        model: KG56NVX30N07
+      - brand: bosch
+        model: KGN49XI3012
+      - brand: bosch
+        model: KG56NVX30N04
+      - brand: bosch
+        model: KG56NVI30N15
+      - brand: bosch
+        model: KG56NVI30N17
+      - brand: bosch
+        model: KGN49XI4009
+      - brand: bosch
+        model: KGN49XI4017
+      - brand: bosch
+        model: KGN49XL3003
+      - brand: bosch
+        model: KGN49XL3002
+      - brand: bosch
+        model: KGN49XI4015
+      - brand: bosch
+        model: KGN49XL3011
+      - brand: bosch
+        model: KGN49XL30604
+      - brand: bosch
+        model: KG56NVX30N08
+      - brand: bosch
+        model: KGN49XL30603
+      - brand: bosch
+        model: KGN49XL3012
+      - brand: bosch
+        model: KGN49XI4014
+      - brand: bosch
+        model: KGN49XL3005
+      - brand: bosch
+        model: KGN49XI4016
+      - brand: bosch
+        model: KGN49XI30U09
+      - brand: bosch
+        model: KGN49XI3013
+      - brand: bosch
+        model: KGN49XI30U02
+      - brand: bosch
+        model: KGN49XI30U03
+      - brand: bosch
+        model: KGN49XI30U06
+      - brand: bosch
+        model: KGN49XI4002
+      - brand: bosch
+        model: KGN49XI30U08
+      - brand: bosch
+        model: KGN49XI4010
+      - brand: bosch
+        model: KGN49XL30601
+      - brand: bosch
+        model: KGN49XI30U04
+      - brand: bosch
+        model: KGN49XI4008
+      - brand: bosch
+        model: KGN49XI30U13
+      - brand: bosch
+        model: KGN49XI4006
+      - brand: bosch
+        model: KGN49XI30U14
+      - brand: bosch
+        model: KGN49XL30G08
+      - brand: bosch
+        model: KG49NXI4009
+      - brand: bosch
+        model: KG49NXX30605
+      - brand: bosch
+        model: KG49NXX4A05
+      - brand: bosch
+        model: KG49NXX4A09
+      - brand: bosch
+        model: KG49NXX4A08
+      - brand: bosch
+        model: KG49NXI4003
+      - brand: bosch
+        model: KG49NXI3007
+      - brand: bosch
+        model: KG49NXX4A11
+      - brand: bosch
+        model: KG49NXX4A14
+      - brand: bosch
+        model: KG49NXX30602
+      - brand: bosch
+        model: KG49NXI4008
+      - brand: bosch
+        model: KG49NXI4006
+      - brand: bosch
+        model: KG49NXI4005
+      - brand: bosch
+        model: KG49NXI4018
+      - brand: bosch
+        model: KG49NXI3009
+      - brand: bosch
+        model: KG49NXI3010
+      - brand: bosch
+        model: KG49NXX4A06
+      - brand: bosch
+        model: KG49NXX30604
+      - brand: bosch
+        model: KG49NXX4A13
+      - brand: bosch
+        model: KG49NXI3016
+      - brand: bosch
+        model: KG49NXX4A15
+      - brand: bosch
+        model: KG49NXI3011
+      - brand: bosch
+        model: KG49NXI4011
+      - brand: bosch
+        model: KG49NXI4016
+      - brand: bosch
+        model: KG49NXI4017
+      - brand: bosch
+        model: KG49NXI3013
+      - brand: bosch
+        model: KG49NXX30601
+      - brand: bosch
+        model: KG49NXI4010
+      - brand: bosch
+        model: KG49NXI3008
+      - brand: bosch
+        model: KG49NXI4014
+      - brand: bosch
+        model: KG49NXI4015
+      - brand: bosch
+        model: KG49NXI4012
+      - brand: bosch
+        model: KG49NXI4013
+      - brand: bosch
+        model: KG49NXX4A10
+      - brand: bosch
+        model: KG49NEI4P06
+      - brand: bosch
+        model: KG56NVI30U14
+      - brand: bosch
+        model: KG56NVI30U15
+      - brand: bosch
+        model: KGD56XI3A03
+      - brand: bosch
+        model: KGD56XI3A01
+      - brand: bosch
+        model: KG56NVI30U11
+      - brand: bosch
+        model: KG56NVI30N08
+      - brand: bosch
+        model: KG56NVI30U10
+      - brand: bosch
+        model: KG56NVL30N10
+      - brand: bosch
+        model: KG56NVI30U12
+      - brand: bosch
+        model: KG56NVL30N12
+      - brand: bosch
+        model: KG49NXI3004
+      - brand: bosch
+        model: KGN49XI2OR07
+      - brand: bosch
+        model: KGN49XI2OR06
+      - brand: bosch
+        model: KG49NXI3006
+      - brand: bosch
+        model: KGN49XI3006
+      - brand: bosch
+        model: KGN49XI2OR04
+      - brand: bosch
+        model: KGN49XI2OR09
+      - brand: bosch
+        model: KGN49XI2OR11
+      - brand: bosch
+        model: KG56NVX30N11
+      - brand: bosch
+        model: KG49NXX4A12
+      - brand: bosch
+        model: KG56NVX30N14
+      - brand: bosch
+        model: KG56NVI30N10
+      - brand: bosch
+        model: KGN49XI3002
+      - brand: bosch
+        model: KGN49EI4P09
+      - brand: bosch
+        model: KG49NEI4P02
+      - brand: bosch
+        model: KG49NEI4P03
+      - brand: bosch
+        model: KG49NEI4P04
+      - brand: bosch
+        model: KG56NVI30N07
+      - brand: bosch
+        model: KGN49XI3004
+      - brand: bosch
+        model: KGN49EI4P06
+      - brand: bosch
+        model: KGN49EI4P08
+      - brand: bosch
+        model: KG56NVI30N06
+      - brand: bosch
+        model: KG46NXI4009
+      - brand: bosch
+        model: KG46NXI4007
+      - brand: bosch
+        model: KG46NXI4002
+      - brand: bosch
+        model: KG56NVX30N09
+      - brand: bosch
+        model: KG49NEI4P05
+      - brand: bosch
+        model: KG49NEI4P11
+      - brand: bosch
+        model: KG46NXI30N02
+      - brand: bosch
+        model: KG46NXI30U02
+      - brand: bosch
+        model: KG46NXI30U08
+      - brand: bosch
+        model: KG49NEI4P08
+      - brand: bosch
+        model: KG49NXI3002
+      - brand: bosch
+        model: KG49NEI4P10
+      - brand: bosch
+        model: KG49NEI4P07
+      - brand: bosch
+        model: KG49NEI4P09
+      - brand: bosch
+        model: KG46NXI30N09
+      - brand: bosch
+        model: KGN49EI4P10
+      - brand: bosch
+        model: KGN49XL30U08
+      - brand: bosch
+        model: KGN49XL30U05
+      - brand: bosch
+        model: KGN49XL30U02
+      - brand: bosch
+        model: KGN49XL30U10
+      - brand: bosch
+        model: KG46NXI30U09
+      - brand: bosch
+        model: KGN49XL30G12
+      - brand: bosch
+        model: KGN49XL30U12
+      - brand: bosch
+        model: KGN49XL30U11
+      - brand: bosch
+        model: KGN49XI2OR12
+      - brand: bosch
+        model: KGN49EI4P03
+      - brand: bosch
+        model: KGN49EI4P04
+      - brand: bosch
+        model: KGN49EI4P02
+      - brand: bosch
+        model: KGN49EI4P07
+      - brand: bosch
+        model: KGN49XI4003
+      - brand: bosch
+        model: KGN49XW30U02
+      - brand: bosch
+        model: KGN49XW30U03
+      - brand: bosch
+        model: KGN39XI4704
+      - brand: bosch
+        model: KGN49XW3002
+      - brand: bosch
+        model: KG49NXI4002
+      - brand: bosch
+        model: KG39NXI30601
+      - brand: bosch
+        model: KG39NXI3506
+      - brand: bosch
+        model: KG56NVI30M06
+      - brand: bosch
+        model: KGN49MI3B01
+      - brand: bosch
+        model: KGN49MI3B02
+      - brand: bosch
+        model: KGD56VL30401
+      - brand: bosch
+        model: KGD56VI30Z09
+      - brand: bosch
+        model: KGD56VL30403
+      - brand: bosch
+        model: KGD56VI30Z08
+      - brand: bosch
+        model: KGD56VL30U01
+      - brand: bosch
+        model: KGD56VL30404
+      - brand: bosch
+        model: KGN49MI3B05
+      - brand: bosch
+        model: KGN49MI3B06
+      - brand: bosch
+        model: KG39NXI3508
+      - brand: bosch
+        model: KG39NXI3511
+      - brand: bosch
+        model: KG39NXI31602
+      - brand: bosch
+        model: KG39NXI30604
+      - brand: bosch
+        model: KG39NXI30603
+      - brand: bosch
+        model: KAN93S65TI05
+      - brand: bosch
+        model: KAH92LQ25R02
+      - brand: bosch
+        model: KAN93S65TI06
+      - brand: bosch
+        model: KGD56VW30401
+      - brand: bosch
+        model: KG56NVW30U05
+      - brand: bosch
+        model: KG56NVI30U05
+      - brand: bosch
+        model: KGN56VW30U05
+      - brand: bosch
+        model: KG39NXI3510
+      - brand: bosch
+        model: KG39NXI3509
+      - brand: bosch
+        model: KGN56VW30N13
+      - brand: bosch
+        model: KG56NXW3005
+      - brand: bosch
+        model: KGN56VL30N12
+      - brand: bosch
+        model: KGN56VW30N12
+      - brand: bosch
+        model: KAH92LQ25R01
+      - brand: bosch
+        model: KGN39IJ3A09
+      - brand: bosch
+        model: KGN39IJ4A11
+      - brand: bosch
+        model: KGN39IJ4A12
+      - brand: bosch
+        model: KGN39IJ4A14
+      - brand: bosch
+        model: KGN39IJ4I04
+      - brand: bosch
+        model: KGN39IJ4I07
+      - brand: bosch
+        model: KGN39IJEA04
+      - brand: bosch
+        model: KSV29VW4P03
+      - brand: bosch
+        model: KGN49XLEA04
+      - brand: bosch
+        model: KGN86AIDP01
+      - brand: bosch
+        model: KGN86AIDP04
+      - brand: bosch
+        model: KGN86AIDP05
+      - brand: bosch
+        model: KGN86AIDP07
+      - brand: bosch
+        model: KGB86AIFP01
+      - brand: bosch
+        model: KGB86AIFP02
+      - brand: bosch
+        model: KGB86AIFP03
+      - brand: bosch
+        model: KGB86AIFP04
+      - brand: bosch
+        model: KGB86AIFP05
+      - brand: bosch
+        model: KGB86AIFP07
+      - brand: bosch
+        model: KGN864IFA01
+      - brand: bosch
+        model: KGN56XLEA07
+      - brand: bosch
+        model: KGN56XLEA08
+      - brand: bosch
+        model: KGN56XLEA09
+      - brand: bosch
+        model: KGN49XLEA05
+      - brand: bosch
+        model: KGN49XLEA06
+      - brand: bosch
+        model: KGN39IJEA05
+      - brand: bosch
+        model: KGN36VLED01
+      - brand: bosch
+        model: KGN36VLED02
+      - brand: bosch
+        model: KGN36VWED01
+      - brand: bosch
+        model: KSV36VLEP01
+      - brand: bosch
+        model: KSV36VLEP02
+      - brand: bosch
+        model: KSV36VLEP03
+      - brand: bosch
+        model: KSV36CWEP01
+      - brand: bosch
+        model: KSV36CWEP02
+      - brand: bosch
+        model: KSV36CWEP03
+      - brand: bosch
+        model: KSV36VWEP01
+      - brand: bosch
+        model: KSV36VWEP02
+      - brand: bosch
+        model: KSV36VWEP03
+      - brand: bosch
+        model: KSV33VLEP01
+      - brand: bosch
+        model: KSV33VLEP02
+      - brand: bosch
+        model: KSV33VLEP03
+      - brand: bosch
+        model: KSV29VLEP01
+      - brand: bosch
+        model: KSV29VLEP02
+      - brand: bosch
+        model: KSV29VLEP03
+      - brand: bosch
+        model: KSV29VWEP01
+      - brand: bosch
+        model: KSV29VWEP02
+      - brand: bosch
+        model: KSV29VWEP03
+      - brand: bosch
+        model: KGD56VL30U03
+      - brand: bosch
+        model: KGD56VW30405
+      - brand: bosch
+        model: KGD56VW30406
+      - brand: bosch
+        model: KGD56XI3A16
+      - brand: bosch
+        model: KGD56XI3A18
+      - brand: bosch
+        model: KGN56UW30N02
+      - brand: bosch
+        model: KGN56UW30N03
+      - brand: bosch
+        model: KGN56UW30N04
+      - brand: bosch
+        model: KGN56UWF0N01
+      - brand: bosch
+        model: KGN56VI20R10
+      - brand: bosch
+        model: KGN56VI20R11
+      - brand: bosch
+        model: KGN56VI20R13
+      - brand: bosch
+        model: KGN56VI20R14
+      - brand: bosch
+        model: KGN56VI20R15
+      - brand: bosch
+        model: KGN56VI30N04
+      - brand: bosch
+        model: KGN56VI30N05
+      - brand: bosch
+        model: KGN56VI30N17
+      - brand: bosch
+        model: KGN56VI30N18
+      - brand: bosch
+        model: KGN56VI30N19
+      - brand: bosch
+        model: KGN56VI30U20
+      - brand: bosch
+        model: KGN56VI30U21
+      - brand: bosch
+        model: KGN56VI30U22
+      - brand: bosch
+        model: KGN56VI30U23
+      - brand: bosch
+        model: KGN56VI30U24
+      - brand: bosch
+        model: KGN56VI30Z04
+      - brand: bosch
+        model: KGN56VI30Z05
+      - brand: bosch
+        model: KGN56VI30Z10
+      - brand: bosch
+        model: KGN56VI30Z11
+      - brand: bosch
+        model: KGN56VI30Z12
+      - brand: bosch
+        model: KGN56VI30Z13
+      - brand: bosch
+        model: KGN56VI30Z14
+      - brand: bosch
+        model: KGN56VI3E812
+      - brand: bosch
+        model: KGN56VI3E814
+      - brand: bosch
+        model: KGN56VI3E815
+      - brand: bosch
+        model: KGN56VIF0N04
+      - brand: bosch
+        model: KGN56VIF0N05
+      - brand: bosch
+        model: KGN56VL30N15
+      - brand: bosch
+        model: KGN56VL30N25
+      - brand: bosch
+        model: KGN56VW30N14
+      - brand: bosch
+        model: KGN56VW30N15
+      - brand: bosch
+        model: KGN56VW30N16
+      - brand: bosch
+        model: KGN56VW30N17
+      - brand: bosch
+        model: KGN56VW30N18
+      - brand: bosch
+        model: KGN56VW30N19
+      - brand: bosch
+        model: KGN56VW30N20
+      - brand: bosch
+        model: KGN56VW30N22
+      - brand: bosch
+        model: KGN56VW30N23
+      - brand: bosch
+        model: KGN56VW30N24
+      - brand: bosch
+        model: KGN56VW30N25
+      - brand: bosch
+        model: KGN56VW30N26
+      - brand: bosch
+        model: KGN56VW30N27
+      - brand: bosch
+        model: KGN56VW30U07
+      - brand: bosch
+        model: KGN56VW30U08
+      - brand: bosch
+        model: KGN56VW30U09
+      - brand: bosch
+        model: KGN56VW30U10
+      - brand: bosch
+        model: KGN56VW30U11
+      - brand: bosch
+        model: KGN56VW30U13
+      - brand: bosch
+        model: KGN56VW30U14
+      - brand: bosch
+        model: KGN56VW30U15
+      - brand: bosch
+        model: KGN56VW30U16
+      - brand: bosch
+        model: KGN56VW40B04
+      - brand: bosch
+        model: KGN56VW40B06
+      - brand: bosch
+        model: KGN56VWF0N03
+      - brand: bosch
+        model: KGN56VWF0N04
+      - brand: bosch
+        model: KGN56VWF0N05
+      - brand: bosch
+        model: KGN56VWF0N06
+      - brand: bosch
+        model: KGN56XI4021
+      - brand: bosch
+        model: KGN56XI4022
+      - brand: bosch
+        model: KGN56XI4024
+      - brand: bosch
+        model: KGN56XI4025
+      - brand: bosch
+        model: KGN56XI4026
+      - brand: bosch
+        model: KGN56XI4027
+      - brand: bosch
+        model: KGN56XI40J01
+      - brand: bosch
+        model: KGN56XI40J02
+      - brand: bosch
+        model: KGN56XI40J13
+      - brand: bosch
+        model: KGN56XI40J15
+      - brand: bosch
+        model: KGN56XIDP09
+      - brand: bosch
+        model: KGN56XIDP10
+      - brand: bosch
+        model: KGN56XIDP11
+      - brand: bosch
+        model: KGN56XIDP12
+      - brand: bosch
+        model: KGN56XIDP13
+      - brand: bosch
+        model: KGN56XIEP02
+      - brand: bosch
+        model: KGN56XIEP03
+      - brand: bosch
+        model: KGN56XIEP04
+      - brand: bosch
+        model: KGN56XL3018
+      - brand: bosch
+        model: KGN56XL3019
+      - brand: bosch
+        model: KGN56XL3020
+      - brand: bosch
+        model: KAF96A46TI03
+      - brand: bosch
+        model: KAF96A46TI04
+      - brand: bosch
+        model: KAF96A46TI05
+      - brand: bosch
+        model: KAF96A46TI06
+      - brand: bosch
+        model: KAF96A46TI07
+      - brand: bosch
+        model: KAF96A46TI08
+      - brand: bosch
+        model: KAF96A46TI09
+      - brand: bosch
+        model: KAF96A66TI03
+      - brand: bosch
+        model: KAF96A66TI04
+      - brand: bosch
+        model: KAF96A66TI05
+      - brand: bosch
+        model: KAF96A66TI06
+      - brand: bosch
+        model: KAF96A66TI07
+      - brand: bosch
+        model: KAF96A66TI08
+      - brand: bosch
+        model: KAF96A66TI09
+      - brand: bosch
+        model: KAF96A66TI10
+      - brand: bosch
+        model: KAF96P90TI01
+      - brand: bosch
+        model: KAF96P90TI02
+      - brand: bosch
+        model: KAF96P90TI03
+      - brand: bosch
+        model: KAF96P90TI04
+      - brand: bosch
+        model: KAF96P90TI05
+      - brand: bosch
+        model: KAF96P90TI06
+      - brand: bosch
+        model: KAF96P90TI07
+      - brand: bosch
+        model: KAF96S20TI01
+      - brand: bosch
+        model: KAF96S20TI02
+      - brand: bosch
+        model: KAF96S20TI03
+      - brand: bosch
+        model: KAF96S20TI04
+      - brand: bosch
+        model: KAF96S20TI05
+      - brand: bosch
+        model: KAF96S20TI06
+      - brand: bosch
+        model: KAF96S20TI07
+      - brand: bosch
+        model: KAF96S80TI04
+      - brand: bosch
+        model: KAF96S80TI05
+      - brand: bosch
+        model: KAF96S80TI06
+      - brand: bosch
+        model: KAF96S80TI07
+      - brand: bosch
+        model: KAF96S80TI08
+      - brand: bosch
+        model: KAN92SC41C01
+      - brand: bosch
+        model: KAN92SC41C02
+      - brand: bosch
+        model: KAN92SC41C03
+      - brand: bosch
+        model: KAN92SC41C04
+      - brand: bosch
+        model: KAN92SC41C05
+      - brand: bosch
+        model: KAN92SC41C06
+      - brand: bosch
+        model: KAN92SC65C01
+      - brand: bosch
+        model: KAN92SC65C02
+      - brand: bosch
+        model: KAN92SC65C03
+      - brand: bosch
+        model: KAN92SC65C04
+      - brand: bosch
+        model: KAN92SC65C05
+      - brand: bosch
+        model: KAN92SC65C06
+      - brand: bosch
+        model: KAN92SC68C01
+      - brand: bosch
+        model: KAN92SC68C02
+      - brand: bosch
+        model: KAN92SC68C03
+      - brand: bosch
+        model: KAN92SC68C04
+      - brand: bosch
+        model: KAN92SC68C05
+      - brand: bosch
+        model: KAN92SC68C06
+      - brand: bosch
+        model: KAN92SC80C01
+      - brand: bosch
+        model: KAN92SC80C02
+      - brand: bosch
+        model: KAN92SC80C03
+      - brand: bosch
+        model: KAN92SC80C04
+      - brand: bosch
+        model: KAN92SC80C05
+      - brand: bosch
+        model: KAN92SC80C06
+      - brand: bosch
+        model: KAN92SCQ0C01
+      - brand: bosch
+        model: KAN92SCQ0C02
+      - brand: bosch
+        model: KAN92SCQ0C03
+      - brand: bosch
+        model: KAN92SCQ0C04
+      - brand: bosch
+        model: KAN92SCQ0C05
+      - brand: bosch
+        model: KAN92SCQ0C06
+      - brand: bosch
+        model: KAN92VC41C01
+      - brand: bosch
+        model: KAN92VC41C02
+      - brand: bosch
+        model: KAN92VC41C03
+      - brand: bosch
+        model: KAN92VC41C04
+      - brand: bosch
+        model: KAN92VC41C05
+      - brand: bosch
+        model: KAN92VC41C06
+      - brand: bosch
+        model: KAN92VC65C01
+      - brand: bosch
+        model: KAN92VC65C02
+      - brand: bosch
+        model: KAN92VC65C03
+      - brand: bosch
+        model: KAN92VC65C04
+      - brand: bosch
+        model: KAN92VC65C05
+      - brand: bosch
+        model: KAN92VC65C06
+      - brand: bosch
+        model: KAN92VC68C01
+      - brand: bosch
+        model: KAN92VC68C02
+      - brand: bosch
+        model: KAN92VC68C03
+      - brand: bosch
+        model: KAN92VC68C04
+      - brand: bosch
+        model: KAN92VC68C05
+      - brand: bosch
+        model: KAN92VC68C06
+      - brand: bosch
+        model: KAN92VC80C01
+      - brand: bosch
+        model: KAN92VC80C02
+      - brand: bosch
+        model: KAN92VC80C03
+      - brand: bosch
+        model: KAN92VC80C04
+      - brand: bosch
+        model: KAN92VC80C05
+      - brand: bosch
+        model: KAN92VC80C06
+      - brand: bosch
+        model: KAN92VCQ0C01
+      - brand: bosch
+        model: KAN92VCQ0C02
+      - brand: bosch
+        model: KAN92VCQ0C03
+      - brand: bosch
+        model: KAN92VCQ0C04
+      - brand: bosch
+        model: KAN92VCQ0C05
+      - brand: bosch
+        model: KAN92VCQ0C06
+      - brand: bosch
+        model: KAN93A266C01
+      - brand: bosch
+        model: KAN93A266C02
+      - brand: bosch
+        model: KAN93A266C03
+      - brand: bosch
+        model: KAN93A266C04
+      - brand: bosch
+        model: KAN93A266C05
+      - brand: bosch
+        model: KAN93A266C06
+      - brand: bosch
+        model: KAN93A266C07
+      - brand: bosch
+        model: KAN93A268C01
+      - brand: bosch
+        model: KAN93A268C02
+      - brand: bosch
+        model: KAN93A268C03
+      - brand: bosch
+        model: KAN93A268C04
+      - brand: bosch
+        model: KAN93A268C05
+      - brand: bosch
+        model: KAN93A268C06
+      - brand: bosch
+        model: KAN93A268C07
+      - brand: bosch
+        model: KSF36EI4P01
+      - brand: bosch
+        model: KSF36EI4P03
+      - brand: bosch
+        model: KSF36EI4P13
+      - brand: bosch
+        model: KSF36EI4P20
+      - brand: bosch
+        model: KSF36EI4P25
+      - brand: bosch
+        model: KSF36PI33C01
+      - brand: bosch
+        model: KSF36PI33C03
+      - brand: bosch
+        model: KSF36PI33C13
+      - brand: bosch
+        model: KSF36PI33C25
+      - brand: bosch
+        model: KSF36PI33C26
+      - brand: bosch
+        model: KSF36PI33C28
+      - brand: bosch
+        model: KSF36PI33C37
+      - brand: bosch
+        model: KSF36PI33C40
+      - brand: bosch
+        model: KSF36PI33D01
+      - brand: bosch
+        model: KSF36PI33D03
+      - brand: bosch
+        model: KSF36PI33D13
+      - brand: bosch
+        model: KSF36PI33D20
+      - brand: bosch
+        model: KSF36PI33D25
+      - brand: bosch
+        model: KSF36PI33D26
+      - brand: bosch
+        model: KSF36PI33D28
+      - brand: bosch
+        model: KSF36PI33D37
+      - brand: bosch
+        model: KSF36PI3P01
+      - brand: bosch
+        model: KSF36PI3P03
+      - brand: bosch
+        model: KSF36PI3P13
+      - brand: bosch
+        model: KSF36PI3P25
+      - brand: bosch
+        model: KSF36PI3P26
+      - brand: bosch
+        model: KSF36PI3P28
+      - brand: bosch
+        model: KSF36PI4P01
+      - brand: bosch
+        model: KSF36PI4P03
+      - brand: bosch
+        model: KSF36PI4P13
+      - brand: bosch
+        model: KSF36PI4P20
+      - brand: bosch
+        model: KSF36PI4P25
+      - brand: bosch
+        model: KSF36PI4P26
+      - brand: bosch
+        model: KSF36PI4P28
+      - brand: bosch
+        model: KSF36PIDP01
+      - brand: bosch
+        model: KSF36PIDP02
+      - brand: bosch
+        model: KSF36PW33D01
+      - brand: bosch
+        model: KSF36PW3P01
+      - brand: bosch
+        model: KSF36PW3P03
+      - brand: bosch
+        model: KSF36PW3P13
+      - brand: bosch
+        model: KSF36PW3P25
+      - brand: bosch
+        model: KSF36PW3P26
+      - brand: bosch
+        model: KSF36PW3P28
+      - brand: bosch
+        model: KSF36PWDP01
+      - brand: bosch
+        model: KSF36PWDP02
+      - brand: bosch
+        model: KDN86AI3E801
+      - brand: bosch
+        model: KDN56XW30M01
+      - brand: bosch
+        model: KDN56XW30U01
+      - brand: bosch
+        model: KDN86AI30M01
+      - brand: bosch
+        model: KDN86AI30M02
+      - brand: bosch
+        model: KAN93S8ATI03
+      - brand: bosch
+        model: KAN93S8ATI04
+      - brand: bosch
+        model: KAN93S8ATI05
+      - brand: bosch
+        model: KAN93S8ATI06
+      - brand: bosch
+        model: KCE40AW4006
+      - brand: bosch
+        model: KCE40AW4007
+      - brand: bosch
+        model: KCE40AW4008
+      - brand: bosch
+        model: KDN56XL30M02
+      - brand: bosch
+        model: KAN93S65TI04
+      - brand: bosch
+        model: KDN56XL30M01
+      - brand: bosch
+        model: KDN55NL20M03
+      - brand: bosch
+        model: KAN92VI30A10
+      - brand: bosch
+        model: KAN92VI30A09
+      - brand: bosch
+        model: KAN92VI30A05
+      - brand: bosch
+        model: KAN92VI30A06
+      - brand: bosch
+        model: KAN92VI30A07
+      - brand: bosch
+        model: KAN92VI30A08
+      - brand: bosch
+        model: KAN92VI3510
+      - brand: bosch
+        model: KAN92VI3553
+      - brand: bosch
+        model: KAN92VI3505
+      - brand: bosch
+        model: KAN92VI3506
+      - brand: bosch
+        model: KAN92VI3507
+      - brand: bosch
+        model: KAN92VI3508
+      - brand: bosch
+        model: KAN92VI3509
+      - brand: bosch
+        model: KAN92VI35I08
+      - brand: bosch
+        model: KAN92VI3511
+      - brand: bosch
+        model: KAN92VI35I07
+      - brand: bosch
+        model: KAN92VI35I06
+      - brand: bosch
+        model: KAN93S65TI07
+      - brand: bosch
+        model: KAN93A268C08
+      - brand: bosch
+        model: KAN92VI30A04
+      - brand: bosch
+        model: KAN93A266C08
+      - brand: bosch
+        model: KAN92VI3554
+      - brand: bosch
+        model: KAN92VI3555
+      - brand: bosch
+        model: KAN92VI35I05
+      - brand: bosch
+        model: KAN92VI35I04
+      - brand: bosch
+        model: KAN92VI35I03
+      - brand: bosch
+        model: KAN92VI35I02
+      - brand: bosch
+        model: KAN92VI3557
+      - brand: bosch
+        model: KAN92VI3556
+      - brand: bosch
+        model: KAN93S8ATI02
+      - brand: bosch
+        model: KAN93S65TI08
+      - brand: bosch
+        model: KAH92LQ25R04
+      - brand: bosch
+        model: KAH92LQ25R03
+      - brand: bosch
+        model: KAN92LB35G02
+      - brand: bosch
+        model: KAN92LB35G04
+      - brand: bosch
+        model: KAN92LB35G05
+      - brand: bosch
+        model: KAN92LB35G06
+      - brand: bosch
+        model: KAN92LB35G07
+      - brand: bosch
+        model: KAN92LB35G08
+      - brand: bosch
+        model: KAN92LB35G09
+      - brand: bosch
+        model: KAA92LB35I01
+      - brand: bosch
+        model: KAA92LB35I02
+      - brand: bosch
+        model: KAF96A46TI10
+      - brand: bosch
+        model: KAF96P90TI08
+      - brand: bosch
+        model: KAF96S20TI08
+      - brand: bosch
+        model: KAF96S80TI03
+      - brand: bosch
+        model: KAN92LB35G10
+      - brand: bosch
+        model: KAN92LB35G11
+      - brand: bosch
+        model: KAN92LB35G42
+      - brand: bosch
+        model: KDN43N120M01
+      - brand: bosch
+        model: KDN30N120M01
+      - brand: bosch
+        model: KDN30N120M04
+      - brand: bosch
+        model: KDN30N120M05
+      - brand: bosch
+        model: KDN43N120M03
+      - brand: bosch
+        model: KDN43N120M04
+      - brand: bosch
+        model: KDN55NL20U01
+      - brand: bosch
+        model: KDN55NL20M01
+      - brand: bosch
+        model: KDN43VL2K503
+      - brand: bosch
+        model: KDN43VL2K501
+      - brand: bosch
+        model: KAN92VI30A03
+      - brand: bosch
+        model: KAN92VI25R44
+      - brand: bosch
+        model: KAN92LB3505
+      - brand: bosch
+        model: KAN92LB35G43
+      - brand: bosch
+        model: KAN92LB35G03
+      - brand: bosch
+        model: KAN92LB3546
+      - brand: bosch
+        model: KAH92LQ25R05
+      - brand: bosch
+        model: KAN92LB3508
+      - brand: bosch
+        model: KAN92LB3504
+      - brand: bosch
+        model: KAN92LB3506
+      - brand: bosch
+        model: KAN92LB3544
+      - brand: bosch
+        model: KAN92LB3507
+      - brand: bosch
+        model: KAN92LB3543
+      - brand: bosch
+        model: KAN92LB3542
+      - brand: bosch
+        model: KAN92LB3511
+      - brand: bosch
+        model: KAN92LB3510
+      - brand: bosch
+        model: KAN92LB3545
+      - brand: bosch
+        model: KAN92LB3509
+      - brand: bosch
+        model: KAN92VI35I09
+      - brand: bosch
+        model: KAN92VI35O01
+      - brand: bosch
+        model: KAN92VI35O03
+      - brand: bosch
+        model: KAN92VI35J08
+      - brand: bosch
+        model: KAN92VI35J09
+      - brand: bosch
+        model: KAN92VI35J04
+      - brand: bosch
+        model: KAN92VI35J05
+      - brand: bosch
+        model: KAN92VI35J06
+      - brand: bosch
+        model: KAN92VI35J07
+      - brand: bosch
+        model: KAN92VI35J01
+      - brand: bosch
+        model: KAN92VI35J03
+      - brand: bosch
+        model: KAN92VI35I43
+      - brand: bosch
+        model: KAN92VI35I42
+      - brand: bosch
+        model: KAN92VI35O04
+      - brand: bosch
+        model: KAN92VI35O05
+      - brand: bosch
+        model: KAN92VI35O06
+      - brand: bosch
+        model: KAN92VI35O07
+      - brand: bosch
+        model: KAN92VI35O08
+      - brand: bosch
+        model: KAN92VI35O09
+      - brand: bosch
+        model: KAN92VI35O10
+      - brand: bosch
+        model: KAN92VI35O11
+      - brand: bosch
+        model: KAN92VI35I11
+      - brand: bosch
+        model: KAN92VI35J02
+      - brand: bosch
+        model: KAN92VI35I10
+      - brand: bosch
+        model: KAN92VI35J10
+      - brand: bosch
+        model: KAN92VI35O02
+      - brand: bosch
+        model: KAN92VI35O42
+      - brand: bosch
+        model: KGN56XIDP15
+      - brand: bosch
+        model: KGN56VIF0N06
+      - brand: bosch
+        model: KGN56VWF0N07
+      - brand: bosch
+        model: KGN56XI40J16
+      - brand: bosch
+        model: KGN56XIEP06
+      - brand: bosch
+        model: KGN56XIDP14
+      - brand: bosch
+        model: KGN56XIDP16
+      - brand: bosch
+        model: KGN76AIF0N02
+      - brand: bosch
+        model: KGN56XIEP05
+      - brand: bosch
+        model: KGN76AI30U21
+      - brand: bosch
+        model: KGN76AI30U22
+      - brand: bosch
+        model: KGN76AID1N01
+      - brand: bosch
+        model: KGN76AI32N16
+      - brand: bosch
+        model: KGN76AI32N18
+      - brand: bosch
+        model: KGN56VI3E816
+      - brand: bosch
+        model: KGN56VXF0N02
+      - brand: bosch
+        model: KGN76AIF0N08
+      - brand: bosch
+        model: KGN76VIF0N02
+      - brand: bosch
+        model: KGN76AIF0N10
+      - brand: bosch
+        model: KGN76AIF0N09
+      - brand: bosch
+        model: KGN56XLEA11
+      - brand: bosch
+        model: KGN76AI22R09
+      - brand: bosch
+        model: KGN76AI22R11
+      - brand: bosch
+        model: KGN76AI22R12
+      - brand: bosch
+        model: KGN76AI22R15
+      - brand: bosch
+        model: KGN56XLEA10
+      - brand: bosch
+        model: KGN76AI22R05
+      - brand: bosch
+        model: KGN76AI30U19
+      - brand: bosch
+        model: KGN76AI30U15
+      - brand: bosch
+        model: KGN76AI30M11
+      - brand: bosch
+        model: KGN76AI22R16
+      - brand: bosch
+        model: KGN76AI32N19
+      - brand: bosch
+        model: KGN76AI30U25
+      - brand: bosch
+        model: KGN86AI42N17
+      - brand: bosch
+        model: KGN86AID1N03
+      - brand: bosch
+        model: KGN86AID2N02
+      - brand: bosch
+        model: KGN86AI4P12
+      - brand: bosch
+        model: KGN86AI4P13
+      - brand: bosch
+        model: KGN86AI4P14
+      - brand: bosch
+        model: KGN86AID1N02
+      - brand: bosch
+        model: KGN86AID1N04
+      - brand: bosch
+        model: KGN86AI2N502
+      - brand: bosch
+        model: KGN86AID1N05
+      - brand: bosch
+        model: KGN86AID1N06
+      - brand: bosch
+        model: KGN86AI4P11
+      - brand: bosch
+        model: KGN86AI4MO11
+      - brand: bosch
+        model: KGN86AI42N18
+      - brand: bosch
+        model: KGN86AI40B24
+      - brand: bosch
+        model: KGN86AI2N504
+      - brand: bosch
+        model: KGN76AI31L05
+      - brand: bosch
+        model: KGN76AIF0N03
+      - brand: bosch
+        model: KGN76AI31L04
+      - brand: bosch
+        model: KGN76AIF0N04
+      - brand: bosch
+        model: KGN76AIF0N05
+      - brand: bosch
+        model: KGN76AIF0N07
+      - brand: bosch
+        model: KGN76AI31L11
+      - brand: bosch
+        model: KGN76AI31L10
+      - brand: bosch
+        model: KGN76AI31L06
+      - brand: bosch
+        model: KGN76AI30U26
+      - brand: bosch
+        model: KGN76AI30Z03
+      - brand: bosch
+        model: KGN76AI31L02
+      - brand: bosch
+        model: KGN76AI31L01
+      - brand: bosch
+        model: KGN76AI30Z12
+      - brand: bosch
+        model: KGN76AI30Z11
+      - brand: bosch
+        model: KGN76AI30Z09
+      - brand: bosch
+        model: KGN76AI30Z05
+      - brand: bosch
+        model: KGN76VIF0N01
+      - brand: bosch
+        model: KGN76VI30M02
+      - brand: bosch
+        model: KGN86AW30U22
+      - brand: bosch
+        model: KSV36FI3P03
+      - brand: bosch
+        model: KSV36FI3P04
+      - brand: bosch
+        model: KSV36FIEP01
+      - brand: bosch
+        model: KSV36FIEP02
+      - brand: bosch
+        model: KGN86AW30U23
+      - brand: bosch
+        model: KGN76DI30N06
+      - brand: bosch
+        model: KSV36CW3P03
+      - brand: bosch
+        model: KGN76AWF0N06
+      - brand: bosch
+        model: KGN76AWF0N07
+      - brand: bosch
+        model: KGN76AWF0N08
+      - brand: bosch
+        model: KGN76DI30M04
+      - brand: bosch
+        model: KGN76DI30M07
+      - brand: bosch
+        model: KGN76DI30N02
+      - brand: bosch
+        model: KSV36CW3P04
+      - brand: bosch
+        model: KSV36CL3P04
+      - brand: bosch
+        model: KGN76VI30M01
+      - brand: bosch
+        model: KSV36CL3P03
+      - brand: bosch
+        model: KSV36UWEP01
+      - brand: bosch
+        model: KSV36UWEP02
+      - brand: bosch
+        model: KSV36UWEP03
+      - brand: bosch
+        model: KSV36VB3P16
+      - brand: bosch
+        model: KSV33VL3PG03
+      - brand: bosch
+        model: KSV36VB3P26
+      - brand: bosch
+        model: KSV36VB3P28
+      - brand: bosch
+        model: KSV36VB3PG12
+      - brand: bosch
+        model: KSV33VLEPG01
+      - brand: bosch
+        model: KSV33VL3PG04
+      - brand: bosch
+        model: KSV36FIEP03
+      - brand: bosch
+        model: KSV36UW3P03
+      - brand: bosch
+        model: KSV36UW3P04
+      - brand: bosch
+        model: KSV36VB3PG16
+      - brand: bosch
+        model: KGN76DI30N03
+      - brand: bosch
+        model: KGN76DI30N04
+      - brand: bosch
+        model: KGN76AWF0N05
+      - brand: bosch
+        model: KGN76VWF0N05
+      - brand: bosch
+        model: KGN76VWF0N06
+      - brand: bosch
+        model: KGN864IFA02
+      - brand: bosch
+        model: KGN864IFA03
+      - brand: bosch
+        model: KGN864IFA04
+      - brand: bosch
+        model: KGN76VWF0N01
+      - brand: bosch
+        model: KGN76VIF0N04
+      - brand: bosch
+        model: KGN76DW30N02
+      - brand: bosch
+        model: KGN76VIF0N03
+      - brand: bosch
+        model: KGN76DW30N07
+      - brand: bosch
+        model: KGN76DW30N05
+      - brand: bosch
+        model: KGN76DW30N04
+      - brand: bosch
+        model: KGN76DW30N03
+      - brand: bosch
+        model: KGN76DW30N06
+      - brand: bosch
+        model: KGN76VWF0N04
+      - brand: bosch
+        model: KGN76VWF0N03
+      - brand: bosch
+        model: KGN76AWF0N03
+      - brand: bosch
+        model: KGN76AWF0N04
+      - brand: bosch
+        model: KGN76AW30N19
+      - brand: bosch
+        model: KGN76AW30N16
+      - brand: bosch
+        model: KGN76AW30N17
+      - brand: bosch
+        model: KGN76AW30N18
+      - brand: bosch
+        model: KGN76AW30N21
+      - brand: bosch
+        model: KGN76AW30N22
+      - brand: bosch
+        model: KGN76VWF0N02
+      - brand: bosch
+        model: KGN76AW30N24
+      - brand: bosch
+        model: KGN76VIF0N05
+      - brand: bosch
+        model: KGN86AW30U21
+      - brand: bosch
+        model: KGN76DI30N07
+      - brand: bosch
+        model: KGN76DI30N05
+      - brand: bosch
+        model: KGN76AWF0N02
+      - brand: bosch
+        model: KGN76AWF0N01
+      - brand: bosch
+        model: KGN86AI40B25
+      - brand: bosch
+        model: KGN86AI42N20
+      - brand: bosch
+        model: KAN92LB35G44
+      - brand: bosch
+        model: KAN92LB35I45
+      - brand: bosch
+        model: KAN92S80TI06
+      - brand: bosch
+        model: KAN92S80TI07
+      - brand: bosch
+        model: KAN92S80TI08
+      - brand: bosch
+        model: KAN92S80TI09
+      - brand: bosch
+        model: KAN92S65TI03
+      - brand: bosch
+        model: KAN92S80TI11
+      - brand: bosch
+        model: KAN92LB35I10
+      - brand: bosch
+        model: KAN92LB35I44
+      - brand: bosch
+        model: KAN92LB35I04
+      - brand: bosch
+        model: KAN92LB35I05
+      - brand: bosch
+        model: KAN92LB35I06
+      - brand: bosch
+        model: KAN92LB35I07
+      - brand: bosch
+        model: KAN92LB35I08
+      - brand: bosch
+        model: KAN92S65TI02
+      - brand: bosch
+        model: KAN92S80TI05
+      - brand: bosch
+        model: KAN92S65TI06
+      - brand: bosch
+        model: KGN86AI30Z03
+      - brand: bosch
+        model: KGN86AI30Z05
+      - brand: bosch
+        model: KGN86AI30Z07
+      - brand: bosch
+        model: KGN86AI30Z09
+      - brand: bosch
+        model: KGN86AI30Z11
+      - brand: bosch
+        model: KGN86AI30Z12
+      - brand: bosch
+        model: KGN86AI30Z13
+      - brand: bosch
+        model: KGN86AI30Z14
+      - brand: bosch
+        model: KAN92S65TI05
+      - brand: bosch
+        model: KAN92S65TI04
+      - brand: bosch
+        model: KAN92S65TI07
+      - brand: bosch
+        model: KGD76AI30424
+      - brand: bosch
+        model: KGN46XL3006
+      - brand: bosch
+        model: KGN86AI31L01
+      - brand: bosch
+        model: KAN92LB35I09
+      - brand: bosch
+        model: KAN92LB35I11
+      - brand: bosch
+        model: KGN86AI31L02
+      - brand: bosch
+        model: KAN92SCBAC03
+      - brand: bosch
+        model: KAN92SC4AC02
+      - brand: bosch
+        model: KAN92SC4AC03
+      - brand: bosch
+        model: KAN92SC5AC01
+      - brand: bosch
+        model: KAN92SC5AC02
+      - brand: bosch
+        model: KAN92SC8AC01
+      - brand: bosch
+        model: KAN92SC8AC02
+      - brand: bosch
+        model: KAN92SCQAC01
+      - brand: bosch
+        model: KAN92SC8AC03
+      - brand: bosch
+        model: KAN92SC8AC04
+      - brand: bosch
+        model: KAN92SCBAC01
+      - brand: bosch
+        model: KAN92SCBAC02
+      - brand: bosch
+        model: KAN92LB35I03
+      - brand: bosch
+        model: KAN92LB35I02
+      - brand: bosch
+        model: KAN92SC5AC03
+      - brand: bosch
+        model: KAN92SCQAC02
+      - brand: bosch
+        model: KAN92LB35I42
+      - brand: bosch
+        model: KAN92VI25R43
+      - brand: bosch
+        model: KAN92LB35I43
+      - brand: bosch
+        model: KAN92S80TI10
+      - brand: bosch
+        model: KAN92S80TI42
+      - brand: bosch
+        model: KAN92VI30A02
+      - brand: bosch
+        model: KAN92SC4AC01
+      - brand: bosch
+        model: KAN92SCQAC03
+      - brand: bosch
+        model: KAN92VI25R05
+      - brand: bosch
+        model: KAN92VI25R06
+      - brand: bosch
+        model: KAN92VI25R42
+      - brand: bosch
+        model: KAN92VI25R11
+      - brand: bosch
+        model: KAN92VI25R10
+      - brand: bosch
+        model: KAN92VI25R09
+      - brand: bosch
+        model: KAN92VI25R08
+      - brand: bosch
+        model: KAN92VI25R07
+      - brand: bosch
+        model: KGN86AI30U28
+      - brand: bosch
+        model: KGN86AI31L03
+      - brand: bosch
+        model: KGN86AI4MO05
+      - brand: bosch
+        model: KGN86AIF0N05
+      - brand: bosch
+        model: KGN86AIDP10
+      - brand: bosch
+        model: KGN86AIF0N03
+      - brand: bosch
+        model: KGN86AIDP11
+      - brand: bosch
+        model: KGN86AIF0N01
+      - brand: bosch
+        model: KGN86AIF0N02
+      - brand: bosch
+        model: KGN86AW30N14
+      - brand: bosch
+        model: KGN86AW30N17
+      - brand: bosch
+        model: KGN86AIF0N07
+      - brand: bosch
+        model: KGN86AIF0N08
+      - brand: bosch
+        model: KGN86AIF0N09
+      - brand: bosch
+        model: KGN86AIF0N10
+      - brand: bosch
+        model: KGN86AI40B20
+      - brand: bosch
+        model: KGN86AI40B16
+      - brand: bosch
+        model: KGN86AW30N15
+      - brand: bosch
+        model: KGN86AW30U19
+      - brand: bosch
+        model: KGN86AI31L05
+      - brand: bosch
+        model: KGN86AW30U18
+      - brand: bosch
+        model: KGN86AI42N21
+      - brand: bosch
+        model: KGN86AI42N24
+      - brand: bosch
+        model: KGN86AI4MO03
+      - brand: bosch
+        model: KGN86AI4MO04
+      - brand: bosch
+        model: KGN86AID1N07
+      - brand: bosch
+        model: KGN86AIDP09
+      - brand: bosch
+        model: KGN86AI40B17
+      - brand: bosch
+        model: KGN86AW30N16
+      - brand: bosch
+        model: KGN86AW30U17
+      - brand: bosch
+        model: KGN86AW30U16
+      - brand: bosch
+        model: KGN86AW30U15
+      - brand: bosch
+        model: KGN86AW30U14
+      - brand: bosch
+        model: KGN86AW30U13
+      - brand: bosch
+        model: KGN86AW30U12
+      - brand: bosch
+        model: KGN86AI2N508
+      - brand: bosch
+        model: KGN86AI30R05
+      - brand: bosch
+        model: KGN86AI30R09
+      - brand: bosch
+        model: KGN86AI30M26
+      - brand: bosch
+        model: KGN86AI30N25
+      - brand: bosch
+        model: KGN86AI30U23
+      - brand: bosch
+        model: KGN86AI30U26
+      - brand: bosch
+        model: KGN86AI3E808
+      - brand: bosch
+        model: KGN86AI31L10
+      - brand: bosch
+        model: KGN86AI31L11
+      - brand: bosch
+        model: KGN86AI3E806
+      - brand: bosch
+        model: KGN86AI40B14
+      - brand: bosch
+        model: KGN86AI40B13
+      - brand: bosch
+        model: KGN86AI3E817
+      - brand: bosch
+        model: KGN86AI3E812
+      - brand: bosch
+        model: KGN86AI30U27
+      - brand: bosch
+        model: KGN86AI3E810
+      - brand: bosch
+        model: KGN86AI30M25
+      - brand: bosch
+        model: KGN86AI30M21
+      - brand: bosch
+        model: KGN86AI30U21
+      - brand: bosch
+        model: KGN86AI30R13
+      - brand: bosch
+        model: KGN86AI30R14
+      - brand: bosch
+        model: KGN86AI30U17
+      - brand: bosch
+        model: KGN86AI30U18
+      - brand: bosch
+        model: KGN86AI30U19
+      - brand: bosch
+        model: KGN86AI30U20
+      - brand: bosch
+        model: KGN86AI30R06
+      - brand: bosch
+        model: KGN86AI30R02
+      - brand: bosch
+        model: KGN86AI30R04
+      - brand: bosch
+        model: KGN86AI30M19
+      - brand: bosch
+        model: KGN86AI30M16
+      - brand: bosch
+        model: KGN86AI30M15
+      - brand: bosch
+        model: KGN86AI2N510
+      - brand: bosch
+        model: KGN86AI30M17
+      - brand: bosch
+        model: KGN86AI40B15
+      - brand: bosch
+        model: KSV33VL3P04
+      - brand: bosch
+        model: KGD86AW30421
+      - brand: bosch
+        model: KGN33NLEAG06
+      - brand: bosch
+        model: KGD86AL30U10
+      - brand: bosch
+        model: KGD86AW30410
+      - brand: bosch
+        model: KGD86AW30411
+      - brand: bosch
+        model: KGD86AW30412
+      - brand: bosch
+        model: KGN33NLEAG05
+      - brand: bosch
+        model: KGN34VW35G08
+      - brand: bosch
+        model: KGD86AW30414
+      - brand: bosch
+        model: KGN34XL35G07
+      - brand: bosch
+        model: KGN34XL35G08
+      - brand: bosch
+        model: KGN34XW35G06
+      - brand: bosch
+        model: KGN34XW35G07
+      - brand: bosch
+        model: KGN36VLED03
+      - brand: bosch
+        model: KGN36VWED02
+      - brand: bosch
+        model: KGD86AL30U09
+      - brand: bosch
+        model: KGD86AI30423
+      - brand: bosch
+        model: KGD86AI30420
+      - brand: bosch
+        model: KGE49AW4108
+      - brand: bosch
+        model: KGN33KLEAE01
+      - brand: bosch
+        model: KGN33KLEAE03
+      - brand: bosch
+        model: KGN33KLEAE04
+      - brand: bosch
+        model: KGN33KLEAE05
+      - brand: bosch
+        model: KGN33NLEAG02
+      - brand: bosch
+        model: KGN33NLEAG03
+      - brand: bosch
+        model: KGN33NLEAG04
+      - brand: bosch
+        model: KGD86AI30418
+      - brand: bosch
+        model: KGD86AI30417
+      - brand: bosch
+        model: KGD86AI30416
+      - brand: bosch
+        model: KGD86AI30422
+      - brand: bosch
+        model: KGD86AW30416
+      - brand: bosch
+        model: KGD86AW30420
+      - brand: bosch
+        model: KGN36XI4612
+      - brand: bosch
+        model: KGN36XI4613
+      - brand: bosch
+        model: KGN36XI4614
+      - brand: bosch
+        model: KGN34VL3504
+      - brand: bosch
+        model: KGN36XI4615
+      - brand: bosch
+        model: KGN34XL35G06
+      - brand: bosch
+        model: KGN34VW35G07
+      - brand: bosch
+        model: KGN34VB35G04
+      - brand: bosch
+        model: KGN34VL3507
+      - brand: bosch
+        model: KGN34VB35G05
+      - brand: bosch
+        model: KGN34VL3505
+      - brand: bosch
+        model: KGN34VL3A06
+      - brand: bosch
+        model: KGN34VL3506
+      - brand: bosch
+        model: KGN34VL3A05
+      - brand: bosch
+        model: KGN34VL3A04
+      - brand: bosch
+        model: KGN34VL35G07
+      - brand: bosch
+        model: KGN34VL35G05
+      - brand: bosch
+        model: KGN34VL3A07
+      - brand: bosch
+        model: KGN34VL35G04
+      - brand: bosch
+        model: KGE49AI3105
+      - brand: bosch
+        model: KGN36XI4616
+      - brand: bosch
+        model: KGD76AL30U16
+      - brand: bosch
+        model: KGA76PI3E805
+      - brand: bosch
+        model: KGA76PI30U06
+      - brand: bosch
+        model: KGA76PI30U05
+      - brand: bosch
+        model: KGA76PI30U02
+      - brand: bosch
+        model: KGN46VL2N501
+      - brand: bosch
+        model: KGA76PI30N01
+      - brand: bosch
+        model: KGA76PI30M04
+      - brand: bosch
+        model: KGA76PIF0N01
+      - brand: bosch
+        model: KGA76PIF0N02
+      - brand: bosch
+        model: KGD86AI30414
+      - brand: bosch
+        model: KGN36XL30U16
+      - brand: bosch
+        model: KGN39IJEA07
+      - brand: bosch
+        model: KGN39MI4A01
+      - brand: bosch
+        model: KGN39XI4706
+      - brand: bosch
+        model: KGN39XI4707
+      - brand: bosch
+        model: KGN36XW30U11
+      - brand: bosch
+        model: KGN39XI4709
+      - brand: bosch
+        model: KGN36XL30U11
+      - brand: bosch
+        model: KGN36XL30U15
+      - brand: bosch
+        model: KGN36XL30603
+      - brand: bosch
+        model: KGN36XL30604
+      - brand: bosch
+        model: KGN36XL30605
+      - brand: bosch
+        model: KGN36XL30606
+      - brand: bosch
+        model: KGN36XL30U09
+      - brand: bosch
+        model: KGN36XW30U10
+      - brand: bosch
+        model: KGN39IJEA06
+      - brand: bosch
+        model: KGN39EI4510
+      - brand: bosch
+        model: KGN36XW30U13
+      - brand: bosch
+        model: KGN36XW30U12
+      - brand: bosch
+        model: KGN39IJ30601
+      - brand: bosch
+        model: KGD86AI30413
+      - brand: bosch
+        model: KGD76AL30U14
+      - brand: bosch
+        model: KGN36XL30U10
+      - brand: bosch
+        model: KGN36XL30U12
+      - brand: bosch
+        model: KGN39XIDR05
+      - brand: bosch
+        model: KGN39XI4712
+      - brand: bosch
+        model: KGN39XI4713
+      - brand: bosch
+        model: KGN39XI4714
+      - brand: bosch
+        model: KGN39XI4717
+      - brand: bosch
+        model: KGN39XI4720
+      - brand: bosch
+        model: KGN39XI4721
+      - brand: bosch
+        model: KGN46UW30N01
+      - brand: bosch
+        model: KGN39XI4722
+      - brand: bosch
+        model: KGN39XIDR01
+      - brand: bosch
+        model: KGN39XIDR02
+      - brand: bosch
+        model: KGN39XIDR03
+      - brand: bosch
+        model: KGN36XL30602
+      - brand: bosch
+        model: KGN36XI4618
+      - brand: bosch
+        model: KGN39XI4719
+      - brand: bosch
+        model: KGN46UW30N02
+      - brand: bosch
+        model: KGN36XL30U13
+      - brand: bosch
+        model: KGN46VL2K507
+      - brand: bosch
+        model: KGN36XL30U14
+      - brand: bosch
+        model: KGN39XI4708
+      - brand: bosch
+        model: KGN39XI4710
+      - brand: bosch
+        model: KGN36XI4619
+      - brand: bosch
+        model: KGN39XI4711
+      - brand: bosch
+        model: KGN46UWF0N01
+      - brand: bosch
+        model: KGN46UWF0N02
+      - brand: bosch
+        model: KGN46VL2A501
+      - brand: bosch
+        model: KGN46VL2K506
+      - brand: bosch
+        model: KGN46VL2K505
+      - brand: bosch
+        model: KGN46VL2K503
+      - brand: bosch
+        model: KGN46VL2K502
+      - brand: bosch
+        model: KGN46VL2K501
+      - brand: bosch
+        model: KGN46VL2A502
+      - brand: bosch
+        model: KGD36VI30501
+      - brand: bosch
+        model: KGB86AIF0N03
+      - brand: bosch
+        model: KGB86AIF0N06
+      - brand: bosch
+        model: KGB86AIF0N10
+      - brand: bosch
+        model: KGB86AIF0N11
+      - brand: bosch
+        model: KGB86AIFP09
+      - brand: bosch
+        model: KGB86AIF0N02
+      - brand: bosch
+        model: KGB86AIFP10
+      - brand: bosch
+        model: KGA76PIF0N07
+      - brand: bosch
+        model: KGA76PIF0N06
+      - brand: bosch
+        model: KGD36VI30Z01
+      - brand: bosch
+        model: KGD36VI3101
+      - brand: bosch
+        model: KGD56VL30U19
+      - brand: bosch
+        model: KGD76AI30417
+      - brand: bosch
+        model: KGD76AI30419
+      - brand: bosch
+        model: KGD76AI30423
+      - brand: bosch
+        model: KGD76AL30U09
+      - brand: bosch
+        model: KGA76PIF0N04
+      - brand: bosch
+        model: KGA76PIF0N03
+      - brand: bosch
+        model: KGB86AIF0N01
+      - brand: bosch
+        model: KGB86AIFP11
+      - brand: bosch
+        model: KGB86AIFP12
+      - brand: bosch
+        model: KGD76AL30U10
+      - brand: bosch
+        model: KSV36VB3P12
+      - brand: bosch
+        model: KSV33VL3P03
+      - brand: bosch
+        model: KSF36PWDP10
+      - brand: bosch
+        model: KGN46XW30N05
+      - brand: bosch
+        model: KGN46XL4009
+      - brand: bosch
+        model: KGN46XL4007
+      - brand: bosch
+        model: KGN49XW30606
+      - brand: bosch
+        model: KGN49XW30604
+      - brand: bosch
+        model: KGN49XIDP15
+      - brand: bosch
+        model: KGN49XIDP14
+      - brand: bosch
+        model: KGN46XL40I01
+      - brand: bosch
+        model: KGN49XIDP13
+      - brand: bosch
+        model: KGN49XIDP11
+      - brand: bosch
+        model: KGN49XIDP10
+      - brand: bosch
+        model: KGN49XW3014
+      - brand: bosch
+        model: KGN49XW3015
+      - brand: bosch
+        model: KGN49XI20R02
+      - brand: bosch
+        model: KGN46XL4010
+      - brand: bosch
+        model: KGN49XI30U16
+      - brand: bosch
+        model: KGN49XW30U05
+      - brand: bosch
+        model: KGN49EIDP06
+      - brand: bosch
+        model: KGN49EIDP02
+      - brand: bosch
+        model: KGN49EIDP01
+      - brand: bosch
+        model: KGN49MIEC04
+      - brand: bosch
+        model: KGN49XIEA03
+      - brand: bosch
+        model: KGN49XI30U15
+      - brand: bosch
+        model: KGN49XI30U18
+      - brand: bosch
+        model: KGN46XW30N07
+      - brand: bosch
+        model: KGN49XW30605
+      - brand: bosch
+        model: KGN49XI30U17
+      - brand: bosch
+        model: KGN46XL40I03
+      - brand: bosch
+        model: KGN46XL40I08
+      - brand: bosch
+        model: KGN46XL40I09
+      - brand: bosch
+        model: KGN49XW30607
+      - brand: bosch
+        model: KGN49XIDP09
+      - brand: bosch
+        model: KGN49XW30603
+      - brand: bosch
+        model: KGN46XL40I17
+      - brand: bosch
+        model: KGV39VWEAG01
+      - brand: bosch
+        model: KGV39VWEAG02
+      - brand: bosch
+        model: KGV58VL30N02
+      - brand: bosch
+        model: KGV58VL30N05
+      - brand: bosch
+        model: KGV58VW31N03
+      - brand: bosch
+        model: KGV58VL30N06
+      - brand: bosch
+        model: KGV58VL30N10
+      - brand: bosch
+        model: KGV58VLE0N01
+      - brand: bosch
+        model: KGV58VW31N02
+      - brand: bosch
+        model: KGV58VL30N04
+      - brand: bosch
+        model: KGV58VW31N04
+      - brand: bosch
+        model: KGV39VW3107
+      - brand: bosch
+        model: KGN46XL40I16
+      - brand: bosch
+        model: KGN49XW30601
+      - brand: bosch
+        model: KGN49XIDP06
+      - brand: bosch
+        model: KGN49XIDP08
+      - brand: bosch
+        model: KGN49MIEB01
+      - brand: bosch
+        model: KGN76AIF0N01
+      - brand: bosch
+        model: KGV58VW31N08
+      - brand: bosch
+        model: KGV58VW31N05
+      - brand: bosch
+        model: KGV58VWE0N01
+      - brand: bosch
+        model: KGN46XL40I14
+      - brand: bosch
+        model: KGN49EIDP08
+      - brand: bosch
+        model: KGN46XL30U11
+      - brand: bosch
+        model: KGN56IJ3AM03
+      - brand: bosch
+        model: KGN46XL3011
+      - brand: bosch
+        model: KGN46XL30U07
+      - brand: bosch
+        model: KGN46XL30U09
+      - brand: bosch
+        model: KGN46XL30U10
+      - brand: bosch
+        model: KGN46XL3E807
+      - brand: bosch
+        model: KGN46XL30Z06
+      - brand: bosch
+        model: KGN56VI20R16
+      - brand: bosch
+        model: KGN46XL30U12
+      - brand: bosch
+        model: KGN46XL3010
+      - brand: bosch
+        model: KGN56UWF0N02
+      - brand: bosch
+        model: KGN46XL30Z01
+      - brand: bosch
+        model: KGN46XL30Z04
+      - brand: bosch
+        model: KGN46XL3007
+      - brand: bosch
+        model: KGN46XL3E803
+      - brand: bosch
+        model: KGN56IJFAN03
+      - brand: bosch
+        model: KGN46XL3E802
+      - brand: bosch
+        model: KGN49XW30U06
+      - brand: bosch
+        model: KGN49XI2OR13
+      - brand: bosch
+        model: KGN49XWEA04
+      - brand: bosch
+        model: KGN49XWEA03
+      - brand: bosch
+        model: KGN49XWEA02
+      - brand: bosch
+        model: KGN49XWEA01
+      - brand: bosch
+        model: KGN49XW30U11
+      - brand: bosch
+        model: KGN46XL30Z05
+      - brand: bosch
+        model: KGN46XL3E805
+      - brand: bosch
+        model: KGN46XL30Z07
+      - brand: bosch
+        model: KGN49XW30U10
+      - brand: bosch
+        model: KGN56IJ3AM02
+      - brand: bosch
+        model: KGN49XW30U07
+      - brand: bosch
+        model: KGN49XW30U09
+      - brand: bosch
+        model: KGN46XL30Z03
+      - brand: bosch
+        model: KGN46XL30U14
+      - brand: bosch
+        model: KGN49XL30U13
+      - brand: bosch
+        model: KGN46XL3009
+      - brand: bosch
+        model: KGN49XW3013
+      - brand: bosch
+        model: KGN56VI30U25
+      - brand: bosch
+        model: KGN49MIEC03
+      - brand: bosch
+        model: KGN49XLEA07
+      - brand: bosch
+        model: KGN49XL30U14
+      - brand: bosch
+        model: KGN49MIEB02
+      - brand: bosch
+        model: KGN49XL30606
+      - brand: bosch
+        model: KGN46XL40I15
+      - brand: bosch
+        model: KGN49EI4P11
+      - brand: bosch
+        model: KGN49XL30G11
+      - brand: bosch
+        model: KGN49XL30G10
+      - brand: bosch
+        model: KGN49XIEA05
+      - brand: bosch
+        model: KGN49XIEA06
+      - brand: bosch
+        model: KGN49XL30607
+      - brand: bosch
+        model: KGN49MIEC02
+      - brand: bosch
+        model: KGN49MIEC01
+      - brand: bosch
+        model: KGN46XL3E808
+      - brand: bosch
+        model: KGN56IJFAN05
+      - brand: bosch
+        model: KGN46XL30U13
+      - brand: bosch
+        model: KGN56UW30N01
+      - brand: bosch
+        model: KGN46XL3008
+      - brand: bosch
+        model: KGN46XL3E806
+      - brand: bosch
+        model: KGN49XI4005
+      - brand: bosch
+        model: KGN49MIEB04
+      - brand: bosch
+        model: KGN49XW3009
+      - brand: bosch
+        model: KGN49XLEA08
+      - brand: bosch
+        model: KGN49XI20R01
+      - brand: bosch
+        model: KGN49XW3004
+      - brand: bosch
+        model: KGN49MIEB03
+      - brand: bosch
+        model: KGN49XIEA04
+      - brand: bosch
+        model: KGN49XW20R02
+      - brand: bosch
+        model: KGN49XW20R01
+      - brand: bosch
+        model: KSW36VI31Z48
+      - brand: bosch
+        model: KSV36VXEP01
+      - brand: bosch
+        model: KSV36VL4P02
+      - brand: bosch
+        model: KSV36VW30N03
+      - brand: bosch
+        model: KSV36VWEPG01
+      - brand: bosch
+        model: KSV36VWEPG03
+      - brand: bosch
+        model: KSV36VXEP02
+      - brand: bosch
+        model: KSV36VI3P05
+      - brand: bosch
+        model: KSW36VI31Z01
+      - brand: bosch
+        model: KSW36VI31Z12
+      - brand: bosch
+        model: KSW36VI31Z16
+      - brand: bosch
+        model: KSW36VI31Z26
+      - brand: bosch
+        model: KSW36VI31Z33
+      - brand: bosch
+        model: KSV36VWEPG02
+      - brand: bosch
+        model: KSV36VIEP01
+      - brand: bosch
+        model: KSV36VI3P04
+      - brand: bosch
+        model: KSV36VL30U02
+      - brand: bosch
+        model: KSV36VI3P03
+      - brand: bosch
+        model: KSV36VL3P03
+      - brand: bosch
+        model: KSV36VL3P04
+      - brand: bosch
+        model: KSV36VL3PG03
+      - brand: bosch
+        model: KSV36VL3PG04
+      - brand: bosch
+        model: KSV36VL3PG05
+      - brand: bosch
+        model: KSV36VL3PG06
+      - brand: bosch
+        model: KSV36VL30U01
+      - brand: bosch
+        model: KSV36VIEP03
+      - brand: bosch
+        model: KSV36VIEP02
+      - brand: bosch
+        model: KSV36VI3E804
+      - brand: bosch
+        model: KSV36VI3E801
+      - brand: bosch
+        model: KSV36VBEP12
+      - brand: bosch
+        model: KSV36VBEP10
+      - brand: bosch
+        model: KSV36VI3E803
+      - brand: bosch
+        model: KSV36VW4P04
+      - brand: bosch
+        model: KSV36VW30N04
+      - brand: bosch
+        model: KSV36VW3P03
+      - brand: bosch
+        model: KSV33VI3A04
+      - brand: bosch
+        model: KSV29VL3P04
+      - brand: bosch
+        model: KSV29UL3P04
+      - brand: bosch
+        model: KSV36VB3PG26
+      - brand: bosch
+        model: KSF36PW33D48
+      - brand: bosch
+        model: KSF36PIDP10
+      - brand: bosch
+        model: KSF36PI33D48
+      - brand: bosch
+        model: KSV29UL3P03
+      - brand: bosch
+        model: KSF36PI33C48
+      - brand: bosch
+        model: KSV33VI3A03
+      - brand: bosch
+        model: KSV33VI3A02
+      - brand: bosch
+        model: KSV36VW3PG04
+      - brand: bosch
+        model: KSV36VW31U03
+      - brand: bosch
+        model: KSV36VW31U04
+      - brand: bosch
+        model: KSV36VW31U05
+      - brand: bosch
+        model: KSV36VW3P04
+      - brand: bosch
+        model: KSV36VW4P02
+      - brand: bosch
+        model: KSV36VW3PG03
+      - brand: bosch
+        model: KSV36VW3PH03
+      - brand: bosch
+        model: KSV33UW3P04
+      - brand: bosch
+        model: KSV36VW3PH04
+      - brand: bosch
+        model: KSV33UW3P03
+      - brand: bosch
+        model: KSV29VW4P02
+      - brand: bosch
+        model: KSV29VW3P03
+      - brand: bosch
+        model: KSV29VL3P03
+      - brand: bosch
+        model: KSV36VB3PG28
+      - brand: bosch
+        model: KSV36VBEP01
+      - brand: bosch
+        model: KSV36VL3K503
+      - brand: bosch
+        model: KSV29VW3P04
+      - brand: bosch
+        model: KSV36VL4P04
+      - brand: bosch
+        model: KGN86AWF0N03
+      - brand: bosch
+        model: KGN86AWF0N09
+      - brand: bosch
+        model: KGN86AW31L11
+      - brand: bosch
+        model: KGN86AWF0N01
+      - brand: bosch
+        model: KGN86AWF0N02
+      - brand: bosch
+        model: KGN86AWF0N04
+      - brand: bosch
+        model: KGV39VWEA01
+      - brand: bosch
+        model: KGN86AWF0N05
+      - brand: bosch
+        model: KGN86AWF0N06
+      - brand: bosch
+        model: KGN86AWF0N07
+      - brand: bosch
+        model: KGN86AW31L10
+      - brand: bosch
+        model: KGN86AW31L07
+      - brand: bosch
+        model: KGN86AW30U28
+      - brand: bosch
+        model: KGV39VW3106
+      - brand: bosch
+        model: KGN86AW30U25
+      - brand: bosch
+        model: KGN56VI30Z15
+      - brand: bosch
+        model: KGN86AW30U24
+      - brand: bosch
+        model: KGN86AW30U27
+      - brand: bosch
+        model: KGV39VLEAG03
+      - brand: bosch
+        model: KGV39VI3107
+      - brand: bosch
+        model: KGN86DW30N01
+      - brand: bosch
+        model: KGN86DWF0N02
+      - brand: bosch
+        model: KGN86DW30N03
+      - brand: bosch
+        model: KGN86DW30N04
+      - brand: bosch
+        model: KGN86DWF0N01
+      - brand: bosch
+        model: KGN86DWF0N03
+      - brand: bosch
+        model: KGN86DWF0N04
+      - brand: bosch
+        model: KGN86AW31L01
+      - brand: bosch
+        model: KGV36YL3005
+      - brand: bosch
+        model: KGV33VL31E11
+      - brand: bosch
+        model: KGN86DWF0N05
+      - brand: bosch
+        model: KGV39VI3109
+      - brand: bosch
+        model: KGV39VI30602
+      - brand: bosch
+        model: KGV39VLEAG02
+      - brand: bosch
+        model: KGV39VW3105
+      - brand: bosch
+        model: KGN86AW31L02
+      - brand: bosch
+        model: KGV39VLEA02
+      - brand: bosch
+        model: KGN86AW31L06
+      - brand: bosch
+        model: KGN86AW31L04
+      - brand: bosch
+        model: KGN86AW31L05
+      - brand: bosch
+        model: KGN86AWF0N10
+      - brand: bosch
+        model: KGN86AWF0N08
+      - brand: bosch
+        model: KGV39VI3108
+      - brand: bosch
+        model: KGV39VI31602
+      - brand: bosch
+        model: KGV39VIEA02
+      - brand: bosch
+        model: KGV39VI31603
+      - brand: bosch
+        model: KGV39VI3110
+      - brand: bosch
+        model: KGN86AW31L03
+      - brand: bosch
+        model: KGV39VI31601
+      - brand: siemens
+        model: KS36FPI3P13
+      - brand: siemens
+        model: KS36FPI3P25
+      - brand: siemens
+        model: KS36FPI3P26
+      - brand: siemens
+        model: KS36FPI4P01
+      - brand: siemens
+        model: KS36FPI4P26
+      - brand: siemens
+        model: KS36FPW3P01
+      - brand: siemens
+        model: KS36FPW3P13
+      - brand: siemens
+        model: KS36FPW3P26
+      - brand: siemens
+        model: KG36NVL4506
+      - brand: siemens
+        model: KG49NXXEA01
+      - brand: siemens
+        model: KG49NXXEA02
+      - brand: siemens
+        model: KG39E8XBA02
+      - brand: siemens
+        model: KG49NXIEP03
+      - brand: siemens
+        model: KG49NXIEP04
+      - brand: siemens
+        model: KG49NXIEP05
+      - brand: siemens
+        model: KG49NXIEP06
+      - brand: siemens
+        model: KG49NXIEP07
+      - brand: siemens
+        model: KG49NXIEPG01
+      - brand: siemens
+        model: KG49NXIEPG02
+      - brand: siemens
+        model: KG49NXIEPG03
+      - brand: siemens
+        model: KG36V6WEAS01
+      - brand: siemens
+        model: KA93NA230C01
+      - brand: siemens
+        model: KA93NA230C02
+      - brand: siemens
+        model: KA93NA230C03
+      - brand: siemens
+        model: KA93NA230C04
+      - brand: siemens
+        model: KA93NA230C05
+      - brand: siemens
+        model: KA93NA230C06
+      - brand: siemens
+        model: KA93NA230C07
+      - brand: siemens
+        model: KA93NA290C01
+      - brand: siemens
+        model: KA93NA290C02
+      - brand: siemens
+        model: KA93NA290C03
+      - brand: siemens
+        model: KA93NA290C04
+      - brand: siemens
+        model: KA93NA290C05
+      - brand: siemens
+        model: KA93NA290C06
+      - brand: siemens
+        model: KA93NA290C07
+      - brand: siemens
+        model: KA93NA292C01
+      - brand: siemens
+        model: KA93NA292C02
+      - brand: siemens
+        model: KA93NA292C03
+      - brand: siemens
+        model: KA93NA292C04
+      - brand: siemens
+        model: KA93NA292C05
+      - brand: siemens
+        model: KA93NA292C06
+      - brand: siemens
+        model: KA93NA292C07
+      - brand: siemens
+        model: KA96FA40TI03
+      - brand: siemens
+        model: KA96FA40TI04
+      - brand: siemens
+        model: KA96FA40TI05
+      - brand: siemens
+        model: KA96FA40TI06
+      - brand: siemens
+        model: KA96FA40TI07
+      - brand: siemens
+        model: KA96FA40TI08
+      - brand: siemens
+        model: KA96FA40TI09
+      - brand: siemens
+        model: KA96FA46TI03
+      - brand: siemens
+        model: KA96FA46TI04
+      - brand: siemens
+        model: KA96FA46TI05
+      - brand: siemens
+        model: KA96FA46TI06
+      - brand: siemens
+        model: KA96FA46TI07
+      - brand: siemens
+        model: KA96FA46TI08
+      - brand: siemens
+        model: KA96FA46TI09
+      - brand: siemens
+        model: KA96FP50TI01
+      - brand: siemens
+        model: KA96FP50TI02
+      - brand: siemens
+        model: KA96FP50TI03
+      - brand: siemens
+        model: KA96FP50TI04
+      - brand: siemens
+        model: KA96FP50TI05
+      - brand: siemens
+        model: KA96FP50TI06
+      - brand: siemens
+        model: KA96FP50TI07
+      - brand: siemens
+        model: KA96FS95TI01
+      - brand: siemens
+        model: KA96FS95TI02
+      - brand: siemens
+        model: KA96FS95TI03
+      - brand: siemens
+        model: KA96FS95TI04
+      - brand: siemens
+        model: KA96FS95TI05
+      - brand: siemens
+        model: KA96FS95TI06
+      - brand: siemens
+        model: KA96FS95TI07
+      - brand: siemens
+        model: KA96FSG0TI01
+      - brand: siemens
+        model: KA96FSG0TI02
+      - brand: siemens
+        model: KA96FSG0TI03
+      - brand: siemens
+        model: KA96FSG0TI04
+      - brand: siemens
+        model: KA96FSG0TI05
+      - brand: siemens
+        model: KA96FSG0TI06
+      - brand: siemens
+        model: KA96FSG0TI07
+      - brand: siemens
+        model: KS36FPIDP01
+      - brand: siemens
+        model: KS36FPW3P28
+      - brand: siemens
+        model: KS36FPXCP01
+      - brand: siemens
+        model: KG34NVW35G04
+      - brand: siemens
+        model: KG34NVW3AG02
+      - brand: siemens
+        model: KG34NVW3AG04
+      - brand: siemens
+        model: KG34NVW3AG06
+      - brand: siemens
+        model: KG34NVW3AG07
+      - brand: siemens
+        model: KG34NVW3AG08
+      - brand: siemens
+        model: KG34NVL3AG03
+      - brand: siemens
+        model: KG34NVI35G02
+      - brand: siemens
+        model: KG33VUL3009
+      - brand: siemens
+        model: KG34NVW35G11
+      - brand: siemens
+        model: KG34NVW35G10
+      - brand: siemens
+        model: KG34NVW35G09
+      - brand: siemens
+        model: KD55NNL20M01
+      - brand: siemens
+        model: KG34NVW35G08
+      - brand: siemens
+        model: KG34NVW35G07
+      - brand: siemens
+        model: KG34NVL3AG02
+      - brand: siemens
+        model: KG34NVI35G03
+      - brand: siemens
+        model: KA92NLB35G02
+      - brand: siemens
+        model: KG34NVI35G04
+      - brand: siemens
+        model: KG34NVI35G05
+      - brand: siemens
+        model: KG34NVI35G06
+      - brand: siemens
+        model: KA93NS73TI06
+      - brand: siemens
+        model: KA93NS73TI07
+      - brand: siemens
+        model: KA93NS73TI08
+      - brand: siemens
+        model: KA93NS9ATI02
+      - brand: siemens
+        model: KA93NS9ATI03
+      - brand: siemens
+        model: KA93NS73TI05
+      - brand: siemens
+        model: KA93NS73TI04
+      - brand: siemens
+        model: KD55NNL20M03
+      - brand: siemens
+        model: KA93NA290C08
+      - brand: siemens
+        model: KA96FP50TI08
+      - brand: siemens
+        model: KA96FS95TI08
+      - brand: siemens
+        model: KA93NA230C08
+      - brand: siemens
+        model: KA92NVI35K44
+      - brand: siemens
+        model: KA92NVI35K43
+      - brand: siemens
+        model: KA93NA292C08
+      - brand: siemens
+        model: KA93NS9ATI04
+      - brand: siemens
+        model: KA93NS9ATI05
+      - brand: siemens
+        model: KG34NVX3AG02
+      - brand: siemens
+        model: KD86NAI30M01
+      - brand: siemens
+        model: KD55NNL20M04
+      - brand: siemens
+        model: KD86NAI30M02
+      - brand: siemens
+        model: KA92NVI35K10
+      - brand: siemens
+        model: KA92NLB3544
+      - brand: siemens
+        model: KA92NVI35K42
+      - brand: siemens
+        model: KA92NVI35K11
+      - brand: siemens
+        model: KA92NLB3504
+      - brand: siemens
+        model: KA92NLB3505
+      - brand: siemens
+        model: KA92NLB3506
+      - brand: siemens
+        model: KA92NLB3507
+      - brand: siemens
+        model: KA92NLB3508
+      - brand: siemens
+        model: KA92NLB3509
+      - brand: siemens
+        model: KA92NLB3543
+      - brand: siemens
+        model: KA92NLB3542
+      - brand: siemens
+        model: KA92NLB3511
+      - brand: siemens
+        model: KA92NLB3510
+      - brand: siemens
+        model: KA96FA46TI10
+      - brand: siemens
+        model: KA93NS9ATI06
+      - brand: siemens
+        model: KA92NLB3545
+      - brand: siemens
+        model: KA92NV66TI48
+      - brand: siemens
+        model: KG39NXI3515
+      - brand: siemens
+        model: KG39NXI4A05
+      - brand: siemens
+        model: KG39NXI4A06
+      - brand: siemens
+        model: KG39NXI4A08
+      - brand: siemens
+        model: KG39NXI4P01
+      - brand: siemens
+        model: KG39NXI4P03
+      - brand: siemens
+        model: KG39NXI3514
+      - brand: siemens
+        model: KG39NXI32602
+      - brand: siemens
+        model: KG39NXI31603
+      - brand: siemens
+        model: KG39NXB4522
+      - brand: siemens
+        model: KG39NXB4523
+      - brand: siemens
+        model: KG39NXB4B01
+      - brand: siemens
+        model: KG39NXB4B05
+      - brand: siemens
+        model: KG39NXI31604
+      - brand: siemens
+        model: KG39NXI4A03
+      - brand: siemens
+        model: KG39NXI4A01
+      - brand: siemens
+        model: KG39NXI3A03
+      - brand: siemens
+        model: KG39NEI4508
+      - brand: siemens
+        model: KG39NEI4509
+      - brand: siemens
+        model: KG39NEI4510
+      - brand: siemens
+        model: KG39NEI4511
+      - brand: siemens
+        model: KG39NEI4512
+      - brand: siemens
+        model: KG39NEI4513
+      - brand: siemens
+        model: KG39NEI4514
+      - brand: siemens
+        model: KG39NEI4515
+      - brand: siemens
+        model: KG39NXI3A01
+      - brand: siemens
+        model: KG39NXI3516
+      - brand: siemens
+        model: KG39NXB4521
+      - brand: siemens
+        model: KG39N3IDQ02
+      - brand: siemens
+        model: KG39NXB4519
+      - brand: siemens
+        model: KG39NXB4517
+      - brand: siemens
+        model: KG39NXI3513
+      - brand: siemens
+        model: KG39NXI32603
+      - brand: siemens
+        model: KG36NVL3509
+      - brand: siemens
+        model: KG36NVL3508
+      - brand: siemens
+        model: KG34NVX3AG06
+      - brand: siemens
+        model: KG36NVL3505
+      - brand: siemens
+        model: KG36NVL3506
+      - brand: siemens
+        model: KG36NVL3507
+      - brand: siemens
+        model: KG36NXI4507
+      - brand: siemens
+        model: KG36NXI4509
+      - brand: siemens
+        model: KG36NVL3510
+      - brand: siemens
+        model: KG36NVL3512
+      - brand: siemens
+        model: KG36NXI3A01
+      - brand: siemens
+        model: KG36NXI3A03
+      - brand: siemens
+        model: KG36NXI4506
+      - brand: siemens
+        model: KG36NXW3A01
+      - brand: siemens
+        model: KG36NXI4508
+      - brand: siemens
+        model: KG36NXL30U09
+      - brand: siemens
+        model: KG39NXI32604
+      - brand: siemens
+        model: KG36NXL30U08
+      - brand: siemens
+        model: KG39NXI3507
+      - brand: siemens
+        model: KG39NXI3512
+      - brand: siemens
+        model: KG39N7IES02
+      - brand: siemens
+        model: KG39N3IDQ01
+      - brand: siemens
+        model: KG76NVIF0N05
+      - brand: siemens
+        model: KG39EEXCA11
+      - brand: siemens
+        model: KG36NXI4510
+      - brand: siemens
+        model: KG36NXI4511
+      - brand: siemens
+        model: KG36NXL30U07
+      - brand: siemens
+        model: KG36NXI4A08
+      - brand: siemens
+        model: KG36NXI4A06
+      - brand: siemens
+        model: KG36NXI4A05
+      - brand: siemens
+        model: KG36NXI4A03
+      - brand: siemens
+        model: KG36NXI4A01
+      - brand: siemens
+        model: KG39NEI4507
+      - brand: siemens
+        model: KG39NEI4506
+      - brand: siemens
+        model: KG39NEI4517
+      - brand: siemens
+        model: KG34NVX3AG05
+      - brand: siemens
+        model: KG39NXB4510
+      - brand: siemens
+        model: KG39NXB4507
+      - brand: siemens
+        model: KG39NXB4508
+      - brand: siemens
+        model: KG39NXB4509
+      - brand: siemens
+        model: KG39NXB4511
+      - brand: siemens
+        model: KG39NXB3A03
+      - brand: siemens
+        model: KG39NXB4512
+      - brand: siemens
+        model: KG39NXB4518
+      - brand: siemens
+        model: KG39NXB3A01
+      - brand: siemens
+        model: KG39NXB4505
+      - brand: siemens
+        model: KG39NXB4516
+      - brand: siemens
+        model: KG39NXB4515
+      - brand: siemens
+        model: KG39NXB4514
+      - brand: siemens
+        model: KG76NVWF0N01
+      - brand: siemens
+        model: KG76NVWF0N03
+      - brand: siemens
+        model: KG36NXW3A03
+      - brand: siemens
+        model: KG36VVLEA04
+      - brand: siemens
+        model: KG49NEIDP12
+      - brand: siemens
+        model: KG49NXIEPG04
+      - brand: siemens
+        model: KG49NXIEPG05
+      - brand: siemens
+        model: KG49NXIEPG06
+      - brand: siemens
+        model: KG49NXXEA03
+      - brand: siemens
+        model: KG56NVI30N18
+      - brand: siemens
+        model: KG49NEIDP10
+      - brand: siemens
+        model: KG46NUI30N01
+      - brand: siemens
+        model: KG39VUW3005
+      - brand: siemens
+        model: KG39NXW3A01
+      - brand: siemens
+        model: KG39VUL3006
+      - brand: siemens
+        model: KG39VUL3008
+      - brand: siemens
+        model: KG39VUL3009
+      - brand: siemens
+        model: KG39VUW3006
+      - brand: siemens
+        model: KG49NXIEP09
+      - brand: siemens
+        model: KG49NXIEP08
+      - brand: siemens
+        model: KG49NEIDP15
+      - brand: siemens
+        model: KG76NDI30M08
+      - brand: siemens
+        model: KG76NDI30M09
+      - brand: siemens
+        model: KG76NDI30N02
+      - brand: siemens
+        model: KG76NDW30N01
+      - brand: siemens
+        model: KG76NDI30N03
+      - brand: siemens
+        model: KG76NDI30N04
+      - brand: siemens
+        model: KG76NDI30N05
+      - brand: siemens
+        model: KG76NDI30N06
+      - brand: siemens
+        model: KG49NEIDP14
+      - brand: siemens
+        model: KG49NEIDP13
+      - brand: siemens
+        model: KG56NVI30N20
+      - brand: siemens
+        model: KG58VVW30N08
+      - brand: siemens
+        model: KG58VVWE0N01
+      - brand: siemens
+        model: KG76NDI30N07
+      - brand: siemens
+        model: KG49NEIDP08
+      - brand: siemens
+        model: KG46NUI30N03
+      - brand: siemens
+        model: KG76NAWF0N08
+      - brand: siemens
+        model: KG56NVWF0N05
+      - brand: siemens
+        model: KG56NVIF0N04
+      - brand: siemens
+        model: KG56NVX30N12
+      - brand: siemens
+        model: KG56NVIF0N05
+      - brand: siemens
+        model: KG56NVIF0N06
+      - brand: siemens
+        model: KG56NVWF0N04
+      - brand: siemens
+        model: KG56NVX30N13
+      - brand: siemens
+        model: KG56NXW3015
+      - brand: siemens
+        model: KG56NXW3007
+      - brand: siemens
+        model: KG56NVX30N18
+      - brand: siemens
+        model: KG56NVX30N19
+      - brand: siemens
+        model: KG56NXI4020
+      - brand: siemens
+        model: KG56NXI4023
+      - brand: siemens
+        model: KG56NXI4025
+      - brand: siemens
+        model: KG56NXW3009
+      - brand: siemens
+        model: KG58VVW30N03
+      - brand: siemens
+        model: KG46NUIF0N01
+      - brand: siemens
+        model: KG58VVW30N02
+      - brand: siemens
+        model: KG46NUIF0N02
+      - brand: siemens
+        model: KG49NEIDP05
+      - brand: siemens
+        model: KG56NVI30N19
+      - brand: siemens
+        model: KG56NVI30U07
+      - brand: siemens
+        model: KG58VVW30N05
+      - brand: siemens
+        model: KG56NXW3011
+      - brand: siemens
+        model: KG56NXW3016
+      - brand: siemens
+        model: KG56NXW3017
+      - brand: siemens
+        model: KG58VVLE0N01
+      - brand: siemens
+        model: KG58VVL30N06
+      - brand: siemens
+        model: KG58VVL30N04
+      - brand: siemens
+        model: KG58VVL30N02
+      - brand: siemens
+        model: KG56NXW3020
+      - brand: siemens
+        model: KG56NXW3019
+      - brand: siemens
+        model: KG76NDI30M05
+      - brand: siemens
+        model: KG76NDI30N01
+      - brand: siemens
+        model: KG36VVLEA06
+      - brand: siemens
+        model: KG36VVL3210
+      - brand: siemens
+        model: KG36VVLEA02
+      - brand: siemens
+        model: KG36VVL3205
+      - brand: siemens
+        model: KG36VVL3206
+      - brand: siemens
+        model: KG36VVL3207
+      - brand: siemens
+        model: KG36VVL3209
+      - brand: siemens
+        model: KG39NXI4P05
+      - brand: siemens
+        model: KG36VUW3005
+      - brand: siemens
+        model: KG39NXI4P06
+      - brand: siemens
+        model: KG39NXI4P08
+      - brand: siemens
+        model: KG76NAIF0N07
+      - brand: siemens
+        model: KG76NAIF0N08
+      - brand: siemens
+        model: KG76NAW30N13
+      - brand: siemens
+        model: KG76NAW30N14
+      - brand: siemens
+        model: KG36VVI32S06
+      - brand: siemens
+        model: KG36V6WEP01
+      - brand: siemens
+        model: KG76NAWF0N07
+      - brand: siemens
+        model: KG36V6WEA02
+      - brand: siemens
+        model: KG36VVLEA07
+      - brand: siemens
+        model: KG36VVWEA01
+      - brand: siemens
+        model: KG39E8XBA03
+      - brand: siemens
+        model: KG39E8XBA04
+      - brand: siemens
+        model: KG39E8XBA05
+      - brand: siemens
+        model: KG39EEI4P03
+      - brand: siemens
+        model: KG39EEI4P04
+      - brand: siemens
+        model: KG39EEXCA09
+      - brand: siemens
+        model: KG36V6WEA01
+      - brand: siemens
+        model: KG36VUW3004
+      - brand: siemens
+        model: KG36V2WEA01
+      - brand: siemens
+        model: KG36VVLEA03
+      - brand: siemens
+        model: KG36VVLEA05
+      - brand: siemens
+        model: KG39EEXCA10
+      - brand: siemens
+        model: KG76NAW30N16
+      - brand: siemens
+        model: KG76NAW30N17
+      - brand: siemens
+        model: KG76NAWF0N01
+      - brand: siemens
+        model: KG76NAWF0N06
+      - brand: siemens
+        model: KG76NDW30N03
+      - brand: siemens
+        model: KG76NDW30N05
+      - brand: siemens
+        model: KG76NDW30N06
+      - brand: siemens
+        model: KG76NDW30N07
+      - brand: siemens
+        model: KG76NVI30M01
+      - brand: siemens
+        model: KG76NVI30M02
+      - brand: siemens
+        model: KG76NVI30M03
+      - brand: siemens
+        model: KG76NDW30N02
+      - brand: siemens
+        model: KG76NDW30N04
+      - brand: siemens
+        model: KG76NVIF0N04
+      - brand: siemens
+        model: KG76NVIF0N03
+      - brand: siemens
+        model: KG76NVIF0N02
+      - brand: siemens
+        model: KG76NVIF0N01
+      - brand: siemens
+        model: KG76NAWF0N05
+      - brand: siemens
+        model: KG76NAIF0N03
+      - brand: siemens
+        model: KG76APIF0N01
+      - brand: siemens
+        model: KG76NAWF0N02
+      - brand: siemens
+        model: KG76NAWF0N03
+      - brand: siemens
+        model: KG76NAWF0N04
+      - brand: siemens
+        model: KG76NAIF0N06
+      - brand: siemens
+        model: KG76NAIF0N05
+      - brand: siemens
+        model: KG76NAI30M11
+      - brand: siemens
+        model: KG76APIF0N03
+      - brand: siemens
+        model: KG76NAIF0N02
+      - brand: siemens
+        model: KG76APIF0N06
+      - brand: siemens
+        model: KG76NAIF0N01
+      - brand: siemens
+        model: KG76NAI32N18
+      - brand: siemens
+        model: KG76NAI32N17
+      - brand: siemens
+        model: KG76NAIF0N04
+      - brand: siemens
+        model: KG76NAI32N15
+      - brand: siemens
+        model: KG76APIF0N07
+      - brand: siemens
+        model: KA92NVI2505
+      - brand: siemens
+        model: KA92NS70TI02
+      - brand: siemens
+        model: KA92NS91TI05
+      - brand: siemens
+        model: KA92NS91TI06
+      - brand: siemens
+        model: KA92NS91TI07
+      - brand: siemens
+        model: KA92NS91TI08
+      - brand: siemens
+        model: KA92NS91TI09
+      - brand: siemens
+        model: KA92NP49TI05
+      - brand: siemens
+        model: KA92NP49TI04
+      - brand: siemens
+        model: KA92NLB35R07
+      - brand: siemens
+        model: KA92NLB35R42
+      - brand: siemens
+        model: KA92NLB35R08
+      - brand: siemens
+        model: KA92NLB35R09
+      - brand: siemens
+        model: KA92NLB35R10
+      - brand: siemens
+        model: KA92NLB35R11
+      - brand: siemens
+        model: KA92NS70TI07
+      - brand: siemens
+        model: KA92NS70TI06
+      - brand: siemens
+        model: KA92NS70TI05
+      - brand: siemens
+        model: KA92NLB35G06
+      - brand: siemens
+        model: KA92NLB35G08
+      - brand: siemens
+        model: KA92NLB35I03
+      - brand: siemens
+        model: KA92NLB35G09
+      - brand: siemens
+        model: KA92NLB35G10
+      - brand: siemens
+        model: KA92NLB35G11
+      - brand: siemens
+        model: KA92NLB35G42
+      - brand: siemens
+        model: KA92NLB35G43
+      - brand: siemens
+        model: KA92NS70TI04
+      - brand: siemens
+        model: KA92NS70TI03
+      - brand: siemens
+        model: KA92NP49TI06
+      - brand: siemens
+        model: KA92NS91TI10
+      - brand: siemens
+        model: KA92NLB35R06
+      - brand: siemens
+        model: KA92NLB35R04
+      - brand: siemens
+        model: KA92NLB35R43
+      - brand: siemens
+        model: KA92NLB35R44
+      - brand: siemens
+        model: KG86NAWF0N02
+      - brand: siemens
+        model: KG86NDW30N01
+      - brand: siemens
+        model: KG86NAW30N14
+      - brand: siemens
+        model: KG86NAW30N15
+      - brand: siemens
+        model: KG86NAWF0N01
+      - brand: siemens
+        model: KG86NAWF0N03
+      - brand: siemens
+        model: KG86NDW30N04
+      - brand: siemens
+        model: KG86NAWF0N04
+      - brand: siemens
+        model: KG86NAWF0N05
+      - brand: siemens
+        model: KG86NAWF0N06
+      - brand: siemens
+        model: KG86NAWF0N07
+      - brand: siemens
+        model: KG86NAWF0N08
+      - brand: siemens
+        model: KG86NDW30N02
+      - brand: siemens
+        model: KA92NLB35R45
+      - brand: siemens
+        model: KA92NP49TI01
+      - brand: siemens
+        model: KA92NP49TI02
+      - brand: siemens
+        model: KA92NP49TI03
+      - brand: siemens
+        model: KG34NVX3AG01
+      - brand: siemens
+        model: KG34NVX3AG03
+      - brand: siemens
+        model: KG86NDWF0N04
+      - brand: siemens
+        model: KG86NDWF0N01
+      - brand: siemens
+        model: KG86NDW30N03
+      - brand: siemens
+        model: KG86NDWF0N05
+      - brand: siemens
+        model: KG86NDWF0N03
+      - brand: siemens
+        model: KG86NDWF0N02
+      - brand: siemens
+        model: KA92NLB35G05
+      - brand: siemens
+        model: KA92NLB35G04
+      - brand: siemens
+        model: KA92NVI3505
+      - brand: siemens
+        model: KA92NV66TI11
+      - brand: siemens
+        model: KA92NV66TI42
+      - brand: siemens
+        model: KA92NV66TI43
+      - brand: siemens
+        model: KA92NV66TI44
+      - brand: siemens
+        model: KA92NVI2544
+      - brand: siemens
+        model: KA92NVI35J07
+      - brand: siemens
+        model: KA92NV66TI45
+      - brand: siemens
+        model: KA92NVI35J09
+      - brand: siemens
+        model: KA92NVI35J10
+      - brand: siemens
+        model: KA92NVI35J11
+      - brand: siemens
+        model: KA92NVI35K03
+      - brand: siemens
+        model: KA92NVI35K04
+      - brand: siemens
+        model: KA92NVI35K05
+      - brand: siemens
+        model: KA92NV66TI10
+      - brand: siemens
+        model: KA92NV66TI09
+      - brand: siemens
+        model: KA92NLB35G03
+      - brand: siemens
+        model: KA92NV66TI07
+      - brand: siemens
+        model: KA92NVI2506
+      - brand: siemens
+        model: KA92NVI2507
+      - brand: siemens
+        model: KA92NVI2508
+      - brand: siemens
+        model: KA92NVI2509
+      - brand: siemens
+        model: KA92NVI2510
+      - brand: siemens
+        model: KA92NVI2511
+      - brand: siemens
+        model: KA92NVI2542
+      - brand: siemens
+        model: KA92NVI2543
+      - brand: siemens
+        model: KA92NV66TI06
+      - brand: siemens
+        model: KA92NV66TI05
+      - brand: siemens
+        model: KA92NV66TI04
+      - brand: siemens
+        model: KA92NV66TI08
+      - brand: siemens
+        model: KA92NV66TI46
+      - brand: siemens
+        model: KA92NV66TI47
+      - brand: siemens
+        model: KA92NVI35K06
+      - brand: siemens
+        model: KA92NVI35K07
+      - brand: siemens
+        model: KA92NVI35K08
+      - brand: siemens
+        model: KA92NLB35R05
+      - brand: siemens
+        model: KA92NLB35I06
+      - brand: siemens
+        model: KA92NLB35I07
+      - brand: siemens
+        model: KA92NLB35I08
+      - brand: siemens
+        model: KA92NLB35I09
+      - brand: siemens
+        model: KA92NLB35I10
+      - brand: siemens
+        model: KA92NLB35I11
+      - brand: siemens
+        model: KA92NLB35I42
+      - brand: siemens
+        model: KA92NLB35G07
+      - brand: siemens
+        model: KA92NLB35I04
+      - brand: siemens
+        model: KA92NLB35I05
+      - brand: siemens
+        model: KA92NLB35I45
+      - brand: siemens
+        model: KA92NLB35I44
+      - brand: siemens
+        model: KA92NLB35I43
+      - brand: siemens
+        model: KA92NS91TI11
+      - brand: siemens
+        model: KA92NS91TI42
+      - brand: siemens
+        model: KA92NVI3508
+      - brand: siemens
+        model: KA92NVI35K09
+      - brand: siemens
+        model: KA92NVI35J08
+      - brand: siemens
+        model: KA92NVI35J06
+      - brand: siemens
+        model: KA92NVI3506
+      - brand: siemens
+        model: KA92NVI3511
+      - brand: siemens
+        model: KA92NVI3507
+      - brand: siemens
+        model: KA92NVI3509
+      - brand: siemens
+        model: KA92NVI35J04
+      - brand: siemens
+        model: KA92NVI3510
+      - brand: siemens
+        model: KA92NVI35J03
+      - brand: siemens
+        model: KA92NVI35J02
+      - brand: siemens
+        model: KA92NVI3544
+      - brand: siemens
+        model: KA92NVI3543
+      - brand: siemens
+        model: KA92NVI35J05
+      - brand: siemens
+        model: KA92NVI3542
+      - brand: siemens
+        model: KG86NAI40C16
+      - brand: siemens
+        model: KG86NAI40C18
+      - brand: siemens
+        model: KG86NAI42N19
+      - brand: siemens
+        model: KG86NAI40C19
+      - brand: siemens
+        model: KG86NAI42N15
+      - brand: siemens
+        model: KG86NAI42N16
+      - brand: siemens
+        model: KG86NAI42N17
+      - brand: siemens
+        model: KG86NAI42N18
+      - brand: siemens
+        model: KG76NVWF0N02
+      - brand: siemens
+        model: KG86NAI40C14
+      - brand: siemens
+        model: KG86NAI40C15
+      - brand: siemens
+        model: KG86NAI40C13
+      - brand: siemens
+        model: KG86NAW30N13
+      - brand: siemens
+        model: KG86NAIF0N08
+      - brand: siemens
+        model: KG86NAIF0N07
+      - brand: siemens
+        model: KG86NAI30M19
+      - brand: siemens
+        model: KG86NAI30M20
+      - brand: siemens
+        model: KG86NAI30N20
+      - brand: siemens
+        model: KG86NAI30N21
+      - brand: siemens
+        model: KG86NAI31L13
+      - brand: siemens
+        model: KG86NAI40C17
+      - brand: siemens
+        model: KG86NAI31L14
+      - brand: siemens
+        model: KG86NAI31L15
+      - brand: siemens
+        model: KG86NAI31L19
+      - brand: siemens
+        model: KG86NAI42N21
+      - brand: siemens
+        model: KG86NAID1N03
+      - brand: siemens
+        model: KG86NAID1N04
+      - brand: siemens
+        model: KG86NAID1N05
+      - brand: siemens
+        model: KG86NAID1N06
+      - brand: siemens
+        model: KG86NAID1N07
+      - brand: siemens
+        model: KG86NAIF0N01
+      - brand: siemens
+        model: KG86NAIF0N02
+      - brand: siemens
+        model: KG86NAI40C12
+      - brand: siemens
+        model: KG86NAI42N20
+      - brand: siemens
+        model: KG86NAID1N02
+      - brand: siemens
+        model: KG86NAIF0N06
+      - brand: siemens
+        model: KG86NAIF0N04
+      - brand: siemens
+        model: KG86NAIF0N03
+      - brand: siemens
+        model: KG86NAI40C11
+      - brand: siemens
+        model: KG86NAI40C10
+      - brand: siemens
+        model: KG86BAIF0N01
+      - brand: siemens
+        model: KG86NAI31L20
+      - brand: siemens
+        model: KG86NAI40C09
+      - brand: siemens
+        model: KG86NAI30M18
+      - brand: siemens
+        model: KG86NAI30M17
+      - brand: siemens
+        model: KG86BAIF0N04
+      - brand: siemens
+        model: KG76NVWF0N04
+      - brand: siemens
+        model: KG86BAIF0N02
+      - brand: siemens
+        model: KG86NAI30M15
+      - brand: siemens
+        model: KG86BAIF0N03
+      - brand: siemens
+        model: KG86NAI30M13
+      - brand: siemens
+        model: KG86NAI30M12
+      - brand: siemens
+        model: KG86NAI30M11
+      - brand: siemens
+        model: KG86BAIF0N09
+      - brand: siemens
+        model: KG86NAI30M16
+      - brand: siemens
+        model: KG86BAIF0N06
+      - brand: siemens
+        model: KS36VVW31U01
+      - brand: siemens
+        model: KS36VVW30N04
+      - brand: siemens
+        model: KS36VVW30N03
+      - brand: siemens
+        model: KS36VVW30N01
+      - brand: siemens
+        model: KS29VVW4P01
+      - brand: siemens
+        model: KS29VVW3PG03
+      - brand: siemens
+        model: KS29VVW3PG02
+      - brand: siemens
+        model: KS29VVW3PG01
+      - brand: siemens
+        model: KS29VVW3P04
+      - brand: siemens
+        model: KS29VVW3P03
+      - brand: siemens
+        model: KS29VVW3P02
+      - brand: siemens
+        model: KS29VVW3P01
+      - brand: siemens
+        model: KS36VVW30N05
+      - brand: siemens
+        model: KS36VVW4P05
+      - brand: siemens
+        model: KS36VVX3PG01
+      - brand: siemens
+        model: KS36VVX3PG26
+      - brand: siemens
+        model: KS36VVX3PG28
+      - brand: siemens
+        model: KS36VVW31U02
+      - brand: siemens
+        model: KS36VVW4P02
+      - brand: siemens
+        model: KS36VVL4P02
+      - brand: siemens
+        model: KS36VVL4P01
+      - brand: siemens
+        model: KS36VVW31U03
+      - brand: siemens
+        model: KS36VVW31U04
+      - brand: siemens
+        model: KS36VVW31U05
+      - brand: siemens
+        model: KS36VVW30N02
+      - brand: siemens
+        model: KS36VVL4P05
+      - brand: siemens
+        model: KS29VVW4P02
+      - brand: siemens
+        model: KS29VVWEP02
+      - brand: siemens
+        model: KS36FPXCP10
+      - brand: siemens
+        model: KS36FPIDP10
+      - brand: siemens
+        model: KS36VVL4P03
+      - brand: siemens
+        model: KS29VVWEP01
+      - brand: siemens
+        model: KS29VVW4P04
+      - brand: siemens
+        model: KS29VVW4P03
+      - brand: siemens
+        model: KS29VVWEP03
+      - brand: siemens
+        model: KS36VVW4P01
+      - brand: siemens
+        model: KS36VVW4P03
+      - brand: balay
+        model: 3FCE642DE12
+      - brand: balay
+        model: 3FCE642ME12
+      - brand: balay
+        model: 3FCE642ME16
+      - brand: balay
+        model: 3FCE642ME17
+      - brand: balay
+        model: 3FCE642WE01
+      - brand: balay
+        model: 3FCE642WE12
+      - brand: balay
+        model: 3FCE642DE01
+      - brand: balay
+        model: 3FCE563XE10
+      - brand: balay
+        model: 3FCE563WE12
+      - brand: balay
+        model: 3FCE563ME10
+      - brand: balay
+        model: 3FCE563ME12
+      - brand: balay
+        model: 3FCE563WE01
+      - brand: balay
+        model: 3FCE563WE10
+      - brand: balay
+        model: 3FCE563XE01
+      - brand: balay
+        model: 3FCE642ME01
+      - brand: balay
+        model: 3FCE642DE28
+      - brand: balay
+        model: 3FCE642DE26
+      - brand: balay
+        model: 3KSP566020
+      - brand: balay
+        model: 3FCE642DE17
+      - brand: balay
+        model: 3FCE642DE16
+      - brand: balay
+        model: 3KF6655ME03
+      - brand: balay
+        model: 3KF6674XE01
+      - brand: balay
+        model: 3KF6675XE01
+      - brand: balay
+        model: 3FCE640ME28
+      - brand: balay
+        model: 3FCE563XE12
+      - brand: balay
+        model: 3KSP566017
+      - brand: balay
+        model: 3FCE642XE26
+      - brand: balay
+        model: 3FCE642XE17
+      - brand: balay
+        model: 3FCE642WE28
+      - brand: balay
+        model: 3FCE642XE01
+      - brand: balay
+        model: 3FCE642XE12
+      - brand: balay
+        model: 3FCE642XE16
+      - brand: balay
+        model: 3FCE643DE26
+      - brand: balay
+        model: 3FCE643DE28
+      - brand: balay
+        model: 3FCE642XE28
+      - brand: balay
+        model: 3FCE643DE01
+      - brand: balay
+        model: 3FCE643DE12
+      - brand: balay
+        model: 3FCE643DE16
+      - brand: balay
+        model: 3FCE643DE17
+      - brand: balay
+        model: 3FCE642WE26
+      - brand: balay
+        model: 3KF6615WE03
+      - brand: balay
+        model: 3FCE640ME01
+      - brand: balay
+        model: 3KF6655ME01
+      - brand: balay
+        model: 3FCE640ME17
+      - brand: balay
+        model: 3FCE640ME26
+      - brand: balay
+        model: 3FCE642WE16
+      - brand: balay
+        model: 3FCE642WE17
+      - brand: balay
+        model: 3KF6615WE01
+      - brand: balay
+        model: 3KF6625WE01
+      - brand: balay
+        model: 3KF6625WE03
+      - brand: balay
+        model: 3KF6626WE01
+      - brand: balay
+        model: 3KF6635WI03
+      - brand: balay
+        model: 3KF6635WI01
+      - brand: balay
+        model: 3KF6626WE08
+      - brand: balay
+        model: 3KF6626WE06
+      - brand: balay
+        model: 3KF6626WE05
+      - brand: balay
+        model: 3KF6626WE03
+      - brand: balay
+        model: 3KSP566018
+      - brand: balay
+        model: 3KSP566016
+      - brand: balay
+        model: 3KF6875XE03
+      - brand: balay
+        model: 3KF6865X30
+      - brand: balay
+        model: 3KF6865X32
+      - brand: balay
+        model: 3KF6875XE01
+      - brand: balay
+        model: 3KF6876XE01
+      - brand: balay
+        model: 3KF6855ME01
+      - brand: balay
+        model: 3KF6876XE03
+      - brand: balay
+        model: 3KF6876XE05
+      - brand: balay
+        model: 3KF6674XE03
+      - brand: balay
+        model: 3KSB560020
+      - brand: balay
+        model: 3KSB560018
+      - brand: balay
+        model: 3KSB560016
+      - brand: balay
+        model: 3KF6675XE03
+      - brand: balay
+        model: 3KF6876XE06
+      - brand: balay
+        model: 3KF6876XE08
+      - brand: balay
+        model: 3KF6855ME03
+      - brand: balay
+        model: 3KF6826WE08
+      - brand: balay
+        model: 3KSB560017
+      - brand: balay
+        model: 3KF6826WE06
+      - brand: balay
+        model: 3KF6676XE01
+      - brand: balay
+        model: 3KF6826WE05
+      - brand: balay
+        model: 3KF6676XE03
+      - brand: balay
+        model: 3KF6826WE03
+      - brand: balay
+        model: 3KF6826WE01
+      - brand: balay
+        model: 3KF6825WE03
+      - brand: balay
+        model: 3KF6825WE01
+      - brand: balay
+        model: 3KF6676XE08
+      - brand: balay
+        model: 3KF6676XE05
+      - brand: balay
+        model: 3FCE563ME01
+      - brand: neff
+        model: KS8368I3P01
+      - brand: neff
+        model: KS8368I3P13
+      - brand: neff
+        model: KS8368I3P25
+      - brand: neff
+        model: KS8368I3P26
+      - brand: neff
+        model: KS8368I3P28
+      - brand: neff
+        model: KS8368IDP01
+      - brand: neff
+        model: KS8368IDP05
+      - brand: neff
+        model: KS8368IDP10
+      - brand: constructa
+        model: CK129EW3302
+      - brand: constructa
+        model: CK539EL3005
+      - brand: constructa
+        model: CK129EW3303
+      - brand: constructa
+        model: CK129EW3304
+      - brand: constructa
+        model: CK129EWE001
+      - brand: constructa
+        model: CK129EWE002
+      - brand: constructa
+        model: CK129EWE003
+      - brand: constructa
+        model: CK129EW3301
+      - brand: constructa
+        model: CK733EWEA02
+      - brand: constructa
+        model: CK733EWEA03
