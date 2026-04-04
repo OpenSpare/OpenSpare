@@ -3,10 +3,6 @@ layout: default
 title: Contributing - PCB Design
 ---
 
-[Home](/) | [Parts List](/parts-list) | [Contributing](/contributing-pcb) | [GitHub](https://github.com/OpenSpare/OpenSpare)
-
----
-
 # Guidelines - PCB design
 
 This page describes how to contribute by designing a new PCB.
