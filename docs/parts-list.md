@@ -3,10 +3,75 @@ layout: default
 title: Parts List
 ---
 
-# Parts List
+Select a brand to browse available parts.
 
-_last update: 2025-10-6_
+<div id="catalog">
+  <!-- Brand Cards -->
+  <div id="brand-cards" class="card-grid">
+    {% for brand in site.data.parts.brands %}
+    <div class="card brand-card" data-brand="{{ brand.id }}">
+      <img src="{{ brand.logo | relative_url }}" alt="{{ brand.name }}" class="card-logo">
+      <h3>{{ brand.name }}</h3>
+    </div>
+    {% endfor %}
+  </div>
 
-Reference | Original picture | Description | Compatible devices | Files | Release status
- -- | -- | -- | -- | -- | --
-DE96-00994A | ![Samsung_DE96-00994A_original_top_picture](<https://github.com/OpenSpare/OpenSpare/blob/main/parts/samsung/oven/SMG_OVN_DE96-00994A/pictures/Samsung_DE96-00994A_original_top_picture.jpg?raw=true>) |Oven's program selector | Samsung ovens (CQ1570U/XEF,  CQ1570U/XEF,  NQ50C7235AS/EF,  NQ50C7535DS/EF,  NQ50C7935ES/EF,  NQ50J5530BS,  NQ50J5530BS/EF,  NQ50K3130BM/EF,  NQ50K3130BS/EF,  NQ50K5130BS,  NQ50K5130BS/EF,  NV64R3531BS/EF,  NV64R3531BS/EF.0000,  NV64R3531BS/EF.0001,  NV64R3571BS/EF,  NV66M3531BS,  NV66M3531BS/EF,  NV66M3531BS/EF.0000,  NV66M3531BS/EF.0011,  NV66M3531BS/EF.0012,  NV66M3531BS/EF.0013,  NV66M3531BSEF,  NV66M3571BS,  NV66M3571BS/EF,  NV66M3571BSEF,  NV68R3571RS/EF,  NV70F7766LS/EF,  NV70F7766LS/EF.0000,  NV70F7796MS/EF,  NV70F7796MS/EF.0001,  NV70M3571RS,  NV70M3571RS/EF,  NV75J7570RS,  NV75J7570RS/EF,  NV75K5541BS,  NV75K5541BS/EF,  NV75K5571BS,  NV75K5571BS/EF,  NV75K5571BSEF,  NV75K5571RM,  NV75K5571RM/EF,  NV75K5571RS,  NV75K5571RS/EF,  NV75M5572RS/EF,  NV75M5572RSEF,  NV75N5573BS/EF,  NV75N5573RM/EF,  NV75N5573RS/EF,  NV75N5574RS/EF,  NV75N5671BS,  NV75N5671BS/EF,  NV75N5671BSEF,  NV75N5671RM,  NV75N5671RM/EF,  NV75N5671RMEF,  NV75N5671RS,  NV75N5671RS/EF,  NV75N5671RSEF,  NV75N7677RS/EF,  NV75N7677RSEF) | [Part design and production files](<https://github.com/OpenSpare/OpenSpare/tree/main/parts/samsung/oven/SMG_OVN_DE96-00994A>) | Published rev 1 (not tested)
+  <!-- Equipment Cards (hidden by default) -->
+  {% for brand in site.data.parts.brands %}
+  <div id="equipment-{{ brand.id }}" class="equipment-section hidden">
+    <div class="back-nav">
+      <a href="#" class="back-link" data-back="brands">← Back to brands</a>
+    </div>
+    <div class="card-grid">
+      {% for equip in brand.equipment %}
+      <div class="card equipment-card" data-brand="{{ brand.id }}" data-equipment="{{ equip.type }}">
+        <img src="{{ equip.icon | relative_url }}" alt="{{ equip.name }}" class="card-logo">
+        <h3>{{ equip.name }}</h3>
+        <span class="part-count">{{ equip.parts.size }} part(s)</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- Parts Cards (hidden by default) -->
+  {% for brand in site.data.parts.brands %}
+  {% for equip in brand.equipment %}
+  <div id="parts-{{ brand.id }}-{{ equip.type }}" class="parts-section hidden">
+    <div class="back-nav">
+      <a href="#" class="back-link" data-back="equipment" data-brand="{{ brand.id }}">← Back to {{ brand.name }}</a>
+    </div>
+    <div class="parts-grid">
+      {% for part in equip.parts %}
+      <div class="card part-card">
+        {% if part.image contains 'http' %}
+        <img src="{{ part.image }}" alt="{{ part.reference }}" class="part-image">
+        {% else %}
+        <img src="{{ part.image | relative_url }}" alt="{{ part.reference }}" class="part-image">
+        {% endif %}
+        <div class="part-info">
+          <h3>{{ part.reference }}</h3>
+          <p class="part-description">{{ part.description }}</p>
+          <span class="part-status">{{ part.status }}</span>
+          {% if part.compatible.size > 0 %}
+          <div class="compatible-section">
+            <a href="#" class="compatible-toggle">{{ part.compatible.size }} compatible device(s) ▼</a>
+            <ul class="compatible-list hidden">
+              {% assign sorted_devices = part.compatible | sort: "brand" | sort: "model" %}
+              {% for device in sorted_devices %}
+              <li>{{ device.brand }} - {{ device.model }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          <a href="{{ part.files }}" class="part-link" target="_blank">View files →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+
+<p class="icon-credits">Icons: <a href="https://www.flaticon.com/fr/icones-gratuites/four" title="four icônes">Oven by Good Ware</a>, <a href="https://www.flaticon.com/fr/icones-gratuites/refrigerateur" title="réfrigérateur icônes">Fridge by Freepik</a> - Flaticon</p>
