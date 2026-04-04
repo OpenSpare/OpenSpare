@@ -1,13 +1,109 @@
 document.addEventListener('DOMContentLoaded', function() {
+  if (typeof partsData === 'undefined') return;
+
+  // Helper: Get brand name from ID
+  function getBrandName(brandId) {
+    var brand = partsData.brands.find(function(b) { return b.id === brandId; });
+    return brand ? brand.name : brandId;
+  }
+
+  // Helper: Get equipment name from ID
+  function getEquipmentName(equipId) {
+    var equip = partsData.equipment_types.find(function(e) { return e.id === equipId; });
+    return equip ? equip.name : equipId;
+  }
+
+  // Helper: Get parts compatible with a brand for an equipment type
+  function getPartsForBrandAndEquipment(brandId, equipmentId) {
+    return partsData.parts.filter(function(part) {
+      if (part.equipment !== equipmentId) return false;
+      return part.compatible && part.compatible.some(function(device) {
+        return device.brand === brandId;
+      });
+    });
+  }
+
+  // Helper: Create part card HTML
+  function createPartCard(part) {
+    var card = document.createElement('div');
+    card.className = 'card part-card';
+
+    var imgSrc = part.image;
+    if (!imgSrc.includes('http')) {
+      imgSrc = document.baseURI.replace(/\/[^\/]*$/, '') + imgSrc;
+    }
+
+    var compatibleHtml = '';
+    if (part.compatible && part.compatible.length > 0) {
+      var sortedDevices = part.compatible.slice().sort(function(a, b) {
+        return (a.brand + a.model).localeCompare(b.brand + b.model);
+      });
+      compatibleHtml = '<div class="compatible-section compatible-box">' +
+        '<a href="#" class="compatible-toggle">' + part.compatible.length + ' compatible device(s) ▼</a>' +
+        '<ul class="compatible-list hidden">';
+      sortedDevices.forEach(function(device) {
+        compatibleHtml += '<li>' + getBrandName(device.brand) + ' - ' + device.model + '</li>';
+      });
+      compatibleHtml += '</ul></div>';
+    }
+
+    card.innerHTML = '<img src="' + imgSrc + '" alt="' + part.reference + '" class="part-image">' +
+      '<div class="part-info">' +
+        '<h3>' + part.reference + '</h3>' +
+        '<p class="part-description">' + part.description + '</p>' +
+        '<span class="part-status">' + part.status + '</span>' +
+        compatibleHtml +
+        '<a href="' + part.files + '" class="part-link" target="_blank">Design files →</a>' +
+      '</div>';
+
+    return card;
+  }
+
+  // Helper: Get total parts count for a brand
+  function getPartsCountForBrand(brandId) {
+    return partsData.parts.filter(function(part) {
+      return part.compatible && part.compatible.some(function(device) {
+        return device.brand === brandId;
+      });
+    }).length;
+  }
+
+  // Initialize: Hide brand cards with no parts
+  document.querySelectorAll('.brand-card').forEach(function(card) {
+    var brandId = card.dataset.brand;
+    if (getPartsCountForBrand(brandId) === 0) {
+      card.classList.add('hidden');
+    }
+  });
+
+  // Initialize: Populate part counts and hide empty equipment cards
+  document.querySelectorAll('.part-count[data-brand][data-equipment]').forEach(function(span) {
+    var brandId = span.dataset.brand;
+    var equipmentId = span.dataset.equipment;
+    var count = getPartsForBrandAndEquipment(brandId, equipmentId).length;
+    span.textContent = count + ' part(s)';
+
+    // Hide equipment card if no parts
+    if (count === 0) {
+      span.closest('.equipment-card').classList.add('hidden');
+    }
+  });
+
+  // Initialize: Populate parts grids
+  document.querySelectorAll('.parts-grid[data-brand][data-equipment]').forEach(function(grid) {
+    var brandId = grid.dataset.brand;
+    var equipmentId = grid.dataset.equipment;
+    var parts = getPartsForBrandAndEquipment(brandId, equipmentId);
+    parts.forEach(function(part) {
+      grid.appendChild(createPartCard(part));
+    });
+  });
+
   // Brand card clicks
   document.querySelectorAll('.brand-card').forEach(function(card) {
     card.addEventListener('click', function() {
       var brandId = this.dataset.brand;
-
-      // Hide brand cards
       document.getElementById('brand-cards').classList.add('hidden');
-
-      // Show equipment cards for this brand
       document.getElementById('equipment-' + brandId).classList.remove('hidden');
     });
   });
@@ -17,11 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     card.addEventListener('click', function() {
       var brandId = this.dataset.brand;
       var equipType = this.dataset.equipment;
-
-      // Hide equipment cards
       document.getElementById('equipment-' + brandId).classList.add('hidden');
-
-      // Show parts for this equipment
       document.getElementById('parts-' + brandId + '-' + equipType).classList.remove('hidden');
     });
   });
@@ -34,45 +126,36 @@ document.addEventListener('DOMContentLoaded', function() {
       var brandId = this.dataset.brand;
 
       if (backTo === 'brands') {
-        // Hide all equipment and parts sections
         document.querySelectorAll('.equipment-section, .parts-section').forEach(function(section) {
           section.classList.add('hidden');
         });
-        // Show brand cards
         document.getElementById('brand-cards').classList.remove('hidden');
       } else if (backTo === 'equipment') {
-        // Hide parts section
         document.querySelectorAll('.parts-section').forEach(function(section) {
           section.classList.add('hidden');
         });
-        // Show equipment cards for this brand
         document.getElementById('equipment-' + brandId).classList.remove('hidden');
       }
     });
   });
 
-  // Compatible devices toggle
-  document.querySelectorAll('.compatible-toggle').forEach(function(toggle) {
-    toggle.addEventListener('click', function(e) {
+  // Compatible devices toggle (using event delegation)
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('compatible-toggle')) {
       e.preventDefault();
       e.stopPropagation();
-      var list = this.nextElementSibling;
+      var list = e.target.nextElementSibling;
       list.classList.toggle('hidden');
       if (list.classList.contains('hidden')) {
-        this.textContent = this.textContent.replace('▲', '▼');
+        e.target.textContent = e.target.textContent.replace('▲', '▼');
       } else {
-        this.textContent = this.textContent.replace('▼', '▲');
+        e.target.textContent = e.target.textContent.replace('▼', '▲');
       }
-    });
-  });
-
-  // Close compatible list when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.compatible-section')) {
+    } else if (!e.target.closest('.compatible-section')) {
       document.querySelectorAll('.compatible-list:not(.hidden)').forEach(function(list) {
         list.classList.add('hidden');
         var toggle = list.previousElementSibling;
-        toggle.textContent = toggle.textContent.replace('▲', '▼');
+        if (toggle) toggle.textContent = toggle.textContent.replace('▲', '▼');
       });
     }
   });
@@ -83,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var searchResultsCount = document.getElementById('search-results-count');
   var searchResultsCards = document.getElementById('search-results-cards');
 
-  if (searchInput && typeof partsData !== 'undefined') {
+  if (searchInput) {
     searchInput.addEventListener('input', function() {
       var query = this.value.trim().toUpperCase();
 
@@ -95,24 +178,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Search through all parts
       var matchingParts = [];
-      partsData.brands.forEach(function(brand) {
-        brand.equipment.forEach(function(equip) {
-          equip.parts.forEach(function(part) {
-            if (part.compatible && part.compatible.length > 0) {
-              var matchingDevices = part.compatible.filter(function(device) {
-                return device.model.toUpperCase().includes(query);
-              });
-              if (matchingDevices.length > 0) {
-                matchingParts.push({
-                  brand: brand.name,
-                  equipment: equip.name,
-                  part: part,
-                  matchingDevices: matchingDevices
-                });
-              }
-            }
+      partsData.parts.forEach(function(part) {
+        if (part.compatible && part.compatible.length > 0) {
+          var matchingDevices = part.compatible.filter(function(device) {
+            return device.model.toUpperCase().includes(query);
           });
-        });
+          if (matchingDevices.length > 0) {
+            matchingParts.push({
+              equipment: getEquipmentName(part.equipment),
+              part: part,
+              matchingDevices: matchingDevices
+            });
+          }
+        }
       });
 
       // Display results
