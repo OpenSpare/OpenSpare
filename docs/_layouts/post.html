@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<script>
+var partsData = {{ site.data.parts | jsonify }};
+</script>
+
 <article class="news-post">
   <a href="{{ '/news' | relative_url }}" class="back-link">&larr; Back to News</a>
 
@@ -9,15 +13,18 @@ layout: default
 
   <div class="post-meta">
     <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-    {% if page.contributor %}
-    <span class="post-contributor">by {{ page.contributor }}</span>
-    {% endif %}
   </div>
 
   {% if page.image_original and page.image_openspare %}
-  <div class="news-image-container">
-    <img src="{{ page.image_original }}" alt="Original part" class="news-image original">
-    <img src="{{ page.image_openspare }}" alt="OpenSpare part" class="news-image openspare">
+  <div class="post-images-comparison">
+    <div class="post-image-box">
+      <img src="{{ page.image_original }}" alt="Original part">
+      <span class="post-image-label label-original">Original part</span>
+    </div>
+    <div class="post-image-box">
+      <img src="{{ page.image_openspare }}" alt="OpenSpare part">
+      <span class="post-image-label label-openspare">OpenSpare part</span>
+    </div>
   </div>
   {% endif %}
 
@@ -27,7 +34,8 @@ layout: default
       <tr><th>Description</th><td>{{ page.part_description }}</td></tr>
       <tr><th>Equipment</th><td>{{ page.equipment }}</td></tr>
       <tr><th>Brands</th><td>{{ page.brands }}</td></tr>
-      <tr><th>Status</th><td>{{ page.status }}</td></tr>
+      <tr><th>Status</th><td><span class="part-status">{{ page.status }}</span></td></tr>
+      <tr class="post-author-row" data-part-reference="{{ page.part_reference }}"><th>Designer</th><td class="post-author-cell"></td></tr>
     </table>
   </div>
 

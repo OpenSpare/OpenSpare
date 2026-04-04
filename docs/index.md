@@ -23,7 +23,7 @@ Like generic drugs that provide the same treatment at a lower cost, OpenSpare pa
   </div>
   <div class="comparison-labels">
     <span class="label-original">Original part</span>
-    <span class="label-openspare">OpenSpare</span>
+    <span class="label-openspare">OpenSpare part</span>
   </div>
 </div>
 
