@@ -202,8 +202,8 @@ a {
 }
 
 .compatible-box {
-  background: #e6f4e6;
-  border-left: 3px solid #2e8b57;
+  background: #fff8e6;
+  border-left: 3px solid $accent-yellow;
   padding: 0.5rem;
 }
 
@@ -218,6 +218,8 @@ a {
   margin: 0.5rem 0 0 0;
   padding-left: 1.2rem;
   font-size: 0.85rem;
+  max-height: 150px;
+  overflow-y: auto;
 
   li {
     margin: 0.15rem 0;
@@ -280,6 +282,8 @@ a {
 .matching-list {
   margin: 0;
   padding-left: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
 
   li {
     margin: 0.15rem 0;
