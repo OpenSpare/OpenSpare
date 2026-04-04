@@ -1,9 +1,10 @@
 ---
 layout: default
 title: OpenSpare
+lang: en
 ---
 
-<p class="tagline">Open-source replacement parts for appliances</p>
+<p class="tagline">Repair your appliances with open-source spare parts !</p>
 
 ## Why OpenSpare?
 
@@ -28,7 +29,7 @@ Like generic drugs that provide the same treatment at a lower cost, OpenSpare pa
 </div>
 
 <div style="text-align: center;">
-  <a href="{{ '/parts-list' | relative_url }}" class="cta-button">Browse Parts</a>
+  <a href="{{ '/en/parts-list' | relative_url }}" class="cta-button">Browse Parts</a>
 </div>
 
 ---

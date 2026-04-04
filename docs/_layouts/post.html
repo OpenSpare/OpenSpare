@@ -7,35 +7,55 @@ var partsData = {{ site.data.parts | jsonify }};
 </script>
 
 <article class="news-post">
-  <a href="{{ '/news' | relative_url }}" class="back-link">&larr; Back to News</a>
+  {% assign lang = page.lang | default: 'en' %}
+  {% if lang == 'fr' %}
+  <a href="{{ '/fr/news' | relative_url }}" class="back-link">&larr; Retour aux Actualités</a>
+  {% else %}
+  <a href="{{ '/en/news' | relative_url }}" class="back-link">&larr; Back to News</a>
+  {% endif %}
 
   <h1>{{ page.title }}</h1>
 
   <div class="post-meta">
+    {% if lang == 'fr' %}
+    {% assign month_num = page.date | date: "%m" %}
+    <span class="post-date">{{ page.date | date: "%d" }} {{ site.data.translations.months_fr_full[month_num] }} {{ page.date | date: "%Y" }}</span>
+    {% else %}
     <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    {% endif %}
   </div>
 
   {% if page.image_original and page.image_openspare %}
   <div class="post-images-comparison">
     <div class="post-image-box">
-      <img src="{{ page.image_original }}" alt="Original part">
-      <span class="post-image-label label-original">Original part</span>
+      <img src="{{ page.image_original }}" alt="{% if lang == 'fr' %}Pièce d'origine{% else %}Original part{% endif %}">
+      <span class="post-image-label label-original">{% if lang == 'fr' %}Pièce d'origine{% else %}Original part{% endif %}</span>
     </div>
     <div class="post-image-box">
-      <img src="{{ page.image_openspare }}" alt="OpenSpare part">
-      <span class="post-image-label label-openspare">OpenSpare part</span>
+      <img src="{{ page.image_openspare }}" alt="{% if lang == 'fr' %}Pièce OpenSpare{% else %}OpenSpare part{% endif %}">
+      <span class="post-image-label label-openspare">{% if lang == 'fr' %}Pièce OpenSpare{% else %}OpenSpare part{% endif %}</span>
     </div>
   </div>
   {% endif %}
 
   <div class="post-details">
     <table class="post-info-table">
+      {% assign equip = site.data.parts.equipment_types | where: "name", page.equipment | first %}
+      {% if lang == 'fr' %}
+      <tr><th>Référence</th><td>{{ page.part_reference }}</td></tr>
+      <tr><th>Description</th><td>{{ page.part_description }}</td></tr>
+      <tr><th>Équipement</th><td>{{ equip.name_fr | default: page.equipment }}</td></tr>
+      <tr><th>Marques</th><td>{{ page.brands }}</td></tr>
+      <tr><th>Statut</th><td><span class="part-status">{{ page.status }}</span></td></tr>
+      <tr class="post-author-row" data-part-reference="{{ page.part_reference }}"><th>Concepteur</th><td class="post-author-cell"></td></tr>
+      {% else %}
       <tr><th>Reference</th><td>{{ page.part_reference }}</td></tr>
       <tr><th>Description</th><td>{{ page.part_description }}</td></tr>
       <tr><th>Equipment</th><td>{{ page.equipment }}</td></tr>
       <tr><th>Brands</th><td>{{ page.brands }}</td></tr>
       <tr><th>Status</th><td><span class="part-status">{{ page.status }}</span></td></tr>
       <tr class="post-author-row" data-part-reference="{{ page.part_reference }}"><th>Designer</th><td class="post-author-cell"></td></tr>
+      {% endif %}
     </table>
   </div>
 
