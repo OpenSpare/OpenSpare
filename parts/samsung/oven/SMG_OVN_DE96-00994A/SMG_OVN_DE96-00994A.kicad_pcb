@@ -4047,7 +4047,7 @@
 		(uuid "e3c819ee-edc2-4112-9e00-d994372eaa44")
 		(at 154.459 104.276 90)
 		(property "Reference" "RS1"
-			(at -8.825 -16.885 90)
+			(at -13.924 0.041 180)
 			(layer "F.SilkS")
 			(uuid "2351b2f9-3e2b-4227-86c2-8b1778b6adf6")
 			(effects
@@ -19219,6 +19219,14 @@
 		(uuid "0efdc2be-3831-44e0-8d13-8c980090b041")
 	)
 	(segment
+		(start 147.741 97.558)
+		(end 143.042 97.558)
+		(width 1)
+		(layer "B.Cu")
+		(net 9)
+		(uuid "65f54780-1027-4588-8ec1-47963b213ea9")
+	)
+	(segment
 		(start 147.75 93.75)
 		(end 147.75 94)
 		(width 1)
@@ -19228,22 +19236,12 @@
 		(uuid "8a2479be-d713-457e-8e1b-95bcd281c72c")
 	)
 	(segment
-		(start 142.542 97.558)
-		(end 142.5 97.6)
+		(start 143.042 97.558)
+		(end 143 97.6)
 		(width 1)
-		(locked yes)
 		(layer "B.Cu")
 		(net 9)
-		(uuid "dfe53f48-fe7e-4488-823a-0efd18b29231")
-	)
-	(segment
-		(start 147.741 97.558)
-		(end 142.542 97.558)
-		(width 1)
-		(locked yes)
-		(layer "B.Cu")
-		(net 9)
-		(uuid "ef6d9c30-140a-4516-af24-5bbac615960c")
+		(uuid "addd1351-587a-4a87-9637-007187e35576")
 	)
 	(segment
 		(start 150.65 93.75)
