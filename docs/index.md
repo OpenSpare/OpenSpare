@@ -2,6 +2,10 @@
 layout: default
 ---
 
+[Home](/) | [Parts List](/parts-list) | [Contributing](/contributing-pcb) | [GitHub](https://github.com/OpenSpare/OpenSpare)
+
+---
+
 **OpenSpare** is an open-source initiative to design and share replacement parts for appliances, with the goal of extending their lifespan and reducing our environmental impact.
 
 ## Why OpenSpare?
@@ -45,7 +49,7 @@ All contributions are welcome:
 - Improving existing designs
 - Manufacturing, testing and sharing feedback
 
-[View the contribution guide on GitHub](https://github.com/OpenSpare/OpenSpare/wiki)
+[View the contribution guide](/contributing-pcb)
 
 ## License
 

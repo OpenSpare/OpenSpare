@@ -1,0 +1,16 @@
+---
+layout: default
+title: Parts List
+---
+
+[Home](/) | [Parts List](/parts-list) | [Contributing](/contributing-pcb) | [GitHub](https://github.com/OpenSpare/OpenSpare)
+
+---
+
+# Parts List
+
+_last update: 2025-10-6_
+
+Reference | Original picture | Description | Compatible devices | Files | Release status
+ -- | -- | -- | -- | -- | --
+DE96-00994A | ![Samsung_DE96-00994A_original_top_picture](<https://github.com/OpenSpare/OpenSpare/blob/main/parts/samsung/oven/SMG_OVN_DE96-00994A/pictures/Samsung_DE96-00994A_original_top_picture.jpg?raw=true>) |Oven's program selector | Samsung ovens (CQ1570U/XEF,  CQ1570U/XEF,  NQ50C7235AS/EF,  NQ50C7535DS/EF,  NQ50C7935ES/EF,  NQ50J5530BS,  NQ50J5530BS/EF,  NQ50K3130BM/EF,  NQ50K3130BS/EF,  NQ50K5130BS,  NQ50K5130BS/EF,  NV64R3531BS/EF,  NV64R3531BS/EF.0000,  NV64R3531BS/EF.0001,  NV64R3571BS/EF,  NV66M3531BS,  NV66M3531BS/EF,  NV66M3531BS/EF.0000,  NV66M3531BS/EF.0011,  NV66M3531BS/EF.0012,  NV66M3531BS/EF.0013,  NV66M3531BSEF,  NV66M3571BS,  NV66M3571BS/EF,  NV66M3571BSEF,  NV68R3571RS/EF,  NV70F7766LS/EF,  NV70F7766LS/EF.0000,  NV70F7796MS/EF,  NV70F7796MS/EF.0001,  NV70M3571RS,  NV70M3571RS/EF,  NV75J7570RS,  NV75J7570RS/EF,  NV75K5541BS,  NV75K5541BS/EF,  NV75K5571BS,  NV75K5571BS/EF,  NV75K5571BSEF,  NV75K5571RM,  NV75K5571RM/EF,  NV75K5571RS,  NV75K5571RS/EF,  NV75M5572RS/EF,  NV75M5572RSEF,  NV75N5573BS/EF,  NV75N5573RM/EF,  NV75N5573RS/EF,  NV75N5574RS/EF,  NV75N5671BS,  NV75N5671BS/EF,  NV75N5671BSEF,  NV75N5671RM,  NV75N5671RM/EF,  NV75N5671RMEF,  NV75N5671RS,  NV75N5671RS/EF,  NV75N5671RSEF,  NV75N7677RS/EF,  NV75N7677RSEF) | [Part design and production files](<https://github.com/OpenSpare/OpenSpare/tree/main/parts/samsung/oven/SMG_OVN_DE96-00994A>) | Published rev 1 (not tested)
